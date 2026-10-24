@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"secondary-fixed":"#71f8e4","primary-fixed":"#97f5cc","on-secondary-container":"#006f64","on-tertiary-fixed":"#002114","surface-bright":"#faf8ff","on-error":"#ffffff","outline-variant":"#bdc9c1","on-background":"#131b2e","on-tertiary-container":"#8fffcb","error-container":"#ffdad6","on-surface":"#131b2e","primary":"#005d42","secondary-container":"#6df5e1","on-error-container":"#93000a","background":"#faf8ff","surface-variant":"#dae2fd","primary-fixed-dim":"#7bd8b1","surface-container-high":"#e2e7ff","on-primary-container":"#9ffdd3","on-primary-fixed":"#002115","tertiary-fixed":"#85f8c4","surface-dim":"#d2d9f4","primary-container":"#047857","on-secondary-fixed-variant":"#005048","tertiary-container":"#007853","surface-container":"#eaedff","inverse-surface":"#283044","on-tertiary":"#ffffff","surface-container-low":"#f2f3ff","surface-container-highest":"#dae2fd","inverse-on-surface":"#eef0ff","tertiary":"#005d3f","outline":"#6e7a73","on-secondary-fixed":"#00201c","tertiary-fixed-dim":"#68dba9","inverse-primary":"#7bd8b1","secondary-fixed-dim":"#4fdbc8","secondary":"#006b5f","on-secondary":"#ffffff","error":"#ba1a1a","on-tertiary-fixed-variant":"#005137","surface-tint":"#006c4e","surface-container-lowest":"#ffffff","on-primary":"#ffffff","on-primary-fixed-variant":"#00513a","on-surface-variant":"#3e4943","surface":"#faf8ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","gutter":"1rem","space-2xl":"2rem","space-xs":"0.25rem","margin":"1.5rem","space-lg":"1rem","gutter-mobile":"0.75rem","space-xl":"1.5rem","space-md":"0.75rem","space-sm":"0.5rem"},"fontFamily":{"headline-md":["Outfit"],"headline-lg":["Outfit"],"metric-stat":["Outfit"],"display-lg":["Outfit"],"body-semibold":["Hanken Grotesk"],"body-md":["Hanken Grotesk"],"label-md":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"label-sm":["Hanken Grotesk"],"display-md":["Outfit"]},"fontSize":{"headline-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-lg":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"metric-stat":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["30px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-semibold":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"display-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-xl"><div class="flex items-center gap-space-md px-space-xl"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[22px]">corporate_fare</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-on-surface tracking-tight">HCM Lite</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Enterprise</span></div></div><div class="px-space-md"><div class="px-space-md mb-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline">Workforce Suite</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-body-semibold"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="attendance-board" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span>Attendance Board</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="employee-directory" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Employee Directory</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leave-approvals" href="#"><span class="material-symbols-outlined text-[20px]">rule</span><span>Leave Approvals</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="payroll-tax" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Payroll &amp; Tax</span></a></nav></div></div><div class="px-space-md flex flex-col gap-space-sm"><div class="px-space-md mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline">Administration</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-body-semibold"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="organization-settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Organization Settings</span></a></nav><div class="mt-space-md px-space-md py-space-sm rounded-lg bg-surface-container flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline">Tenant Region</span><span class="font-body-semibold text-body-semibold text-on-surface">US-East (Prod)</span></div><span class="w-2 h-2 rounded-full bg-primary-container"></span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full h-9 pl-9 pr-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search employees, leaves, payroll..." type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs bg-surface-container-high px-space-sm py-1 rounded-full"><button class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface shadow-sm" type="button">HR Manager</button><button class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Admin</button></div><button aria-label="Notifications" class="relative w-9 h-9 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary"></span></button><div class="flex items-center gap-space-md pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:flex flex-col text-left"><span class="font-body-semibold text-body-semibold text-on-surface leading-tight">Morgan Vance</span><span class="font-label-sm text-label-sm text-outline">morgan.vance@hcmlite.io</span></div></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="px-margin py-space-xl flex flex-col gap-space-xl max-w-7xl mx-auto w-full">
+<!-- Top Bar & Breadcrumb & Executive Summary Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm font-label-md text-label-md text-outline">
+<span class="hover:text-primary cursor-pointer transition-colors">HR Operations</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-body-semibold">Leave Approvals</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-md">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">
+            Leave Approvals &amp; Workforce Availability
+          </h1>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+              3 Pending Approvals
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px] text-primary">analytics</span>
+              Dept Absenteeism: 2.1% (Low)
+            </span>
+<span class="hidden sm:inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[13px] text-secondary">sync</span>
+              Realtime Sync
+            </span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-semibold text-body-semibold hover:bg-surface-container transition-all shadow-sm" id="exportCalendarBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">event_available</span>
+<span>Export Calendar (.ics)</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-body-semibold text-body-semibold hover:bg-primary transition-all shadow-sm shadow-primary/20" id="batchApproveBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span>Batch Approve Eligible (2)</span>
+</button>
+</div>
+</div>
+<!-- Executive Operational KPI Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Pending Decisions</span>
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">pending_actions</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-metric-stat text-metric-stat text-on-surface">3</span>
+<span class="font-body-semibold text-body-semibold text-error">Immediate Action</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">2 Eng, 1 Product Design</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-error to-error/30"></div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Today On Leave</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">beach_access</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-metric-stat text-metric-stat text-on-surface">4 Staff</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container font-semibold text-secondary">In Shift 1</span>
+</div>
+<div class="flex items-center gap-1 mt-1 text-outline font-label-sm text-label-sm truncate">
+<span>Sara A., Bilal T., Zoya K., +1</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary to-secondary/30"></div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Upcoming Leaves</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">date_range</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-metric-stat text-metric-stat text-on-surface">6 Staff</span>
+<span class="font-body-semibold text-body-semibold text-primary">Next 7 Days</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">85% planned coverage buffer</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/30"></div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Approval SLA Velocity</span>
+<div class="w-8 h-8 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-metric-stat text-metric-stat text-on-surface">2.4h</span>
+<span class="font-body-semibold text-body-semibold text-primary">Avg Turnaround</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">&lt; 24h internal corporate policy</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-container to-secondary"></div>
+</div>
+</div>
+<!-- Dual Panel Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Panel: Pending Approvals Inbox (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Filter / Sub-header bar -->
+<div class="bg-surface-container-lowest rounded-xl px-space-lg py-space-md flex flex-wrap items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Pending Requests</h2>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold">3</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-md font-body-md text-on-surface-variant">
+<button class="px-space-sm py-1 rounded-md bg-surface-container text-on-surface font-body-semibold">All Departments</button>
+<button class="px-space-sm py-1 rounded-md text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors">Engineering</button>
+<button class="px-space-sm py-1 rounded-md text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors">Design</button>
+<button class="p-1 rounded-md text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors ml-1">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Approvals List -->
+<div class="flex flex-col gap-space-lg">
+<!-- Card 1: Sara Ahmed (Featured Request) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm hover:shadow-md transition-all relative overflow-hidden flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Close-up professional studio portrait of Sara Ahmed, a young South Asian female engineer wearing a modern minimal navy blazer, warm bright ambient corporate lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9gzontSoeRosCuula8PZauxm_-ZySnD74e6yH-WBUPa5d9ZbN34Tv_yDjs6hF0zqtBru3hS9Tp56rW1JU3wb_XW4lsy9PBYj_tHFlgOtXVVhTmcY6-wvONGvC-P5Yvcjo4joH_8hYu3ohEVFrcBlMEKJ30GqZZLylYg83Q9ita7rogfs30Ya5AE3qSqntl7ItJcI1r7Gs3j36FybAi3ZWfCJfR6Fr8q9T84kv57sOBWSZC3ovkQLyMw"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-[10px] font-bold">✓</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-md text-headline-md text-on-surface">Sara Ahmed</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-outline font-label-sm text-label-sm font-mono">EMP-002</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">Lead Frontend Engineer</span>
+</div>
+<span class="font-label-md text-label-md text-outline">Product &amp; Engineering Department • Reporting to Morgan Vance</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">celebration</span>
+                  Casual Leave
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold">
+                  2 Working Days
+                </span>
+</div>
+</div>
+<!-- Leave Timeline & Safe Indicator -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Nov 11, 2024 — Nov 12, 2024</span>
+<span class="font-label-sm text-label-sm text-outline">Monday to Tuesday • Resume work on Nov 13</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">No sprint blockers detected</span>
+</div>
+</div>
+<!-- Reason Description -->
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Employee Note &amp; Justification</span>
+<p class="font-body-md text-body-md text-on-surface bg-surface-container-lowest/50 p-space-sm rounded-lg">
+                “Attending sister's wedding ceremony and family celebrations in Lahore. Handed over current design review milestones to Hamza; emergency on-call contact retained.”
+              </p>
+</div>
+<!-- Quota Snapshot & Team Impact Radar -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Leave Quota Snapshot -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Leave Quota Projection</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Sufficient Balance</span>
+</div>
+<div class="flex flex-col gap-2">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface">Casual: 9 / 10 remaining</span>
+<span class="text-error font-semibold">→ 7 / 10 after leave</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 70%"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 text-label-sm text-outline pt-1">
+<div>Annual: <strong class="text-on-surface">11/14</strong></div>
+<div>Sick: <strong class="text-on-surface">7/8</strong></div>
+</div>
+</div>
+</div>
+<!-- Team Impact Radar -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Team Impact Radar</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">0% Overlap Risk</span>
+</div>
+<div class="flex items-center gap-space-md my-auto pt-1">
+<div class="relative w-10 h-10 flex items-center justify-center">
+<svg class="w-10 h-10 transform -rotate-90">
+<circle class="text-surface-container-high" cx="20" cy="20" fill="transparent" r="16" stroke="currentColor" stroke-width="3"></circle>
+<circle class="text-primary" cx="20" cy="20" fill="transparent" r="16" stroke="currentColor" stroke-dasharray="100" stroke-dashoffset="8" stroke-width="3"></circle>
+</svg>
+<span class="absolute font-label-sm text-label-sm font-bold text-on-surface">100%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Zero peer absences</span>
+<span class="font-label-sm text-label-sm text-outline">Frontend team (6 engineers) fully staffed</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons Strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface-variant font-body-semibold text-body-semibold hover:bg-surface-container hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Request Info</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-error-container text-on-error-container font-body-semibold text-body-semibold hover:opacity-90 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span>Reject</span>
+</button>
+</div>
+<!-- Trigger modal review -->
+<button class="inline-flex items-center gap-1.5 px-space-lg py-2 rounded-lg bg-primary text-on-primary font-body-semibold text-body-semibold hover:bg-primary-container transition-all shadow-sm shadow-primary/20" id="openReviewModalBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">rule</span>
+<span>Review &amp; Approve</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Hamza Rehman -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Headshot of Hamza Rehman, a South Asian junior developer wearing casual tech company apparel, looking at the camera in a modern tech office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdDJavU6DFyVuK-sc1kIfQZY5Li09dEuePGxDX7H-bKqJ73w77Nf4v7Olj3_LBUpR-yffC6ANBn5v-R_7K9b0ybzRud6TAFxmcgaT3kCBoJ21kgC3-fV8tGDXUCCnsPUQT4UXMn1PzoNkxGWNkGBOBtSZVNoT8bVYEtqZ7onippMelWQwXukEnY7dYen74SOaIa6YExIBIYXJc5bdej5fRX0MXMrHz7Rc1yL_DdW4f7JNxgP_vk6x2gA"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-md text-headline-md text-on-surface">Hamza Rehman</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-outline font-label-sm text-label-sm font-mono">EMP-005</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Junior Backend Dev</span>
+</div>
+<span class="font-label-md text-label-md text-outline">Engineering • Tariq Vance Approved</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold">
+                  Annual Leave
+                </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-semibold">
+                  5 Working Days
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-md bg-surface-container-low px-space-md py-2 rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">calendar_today</span>
+<span class="font-body-semibold text-body-semibold text-on-surface">Nov 18 - Nov 22, 2024</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Balance: 14/14 Available</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              “Family annual vacation trip to northern areas. Completed tasks assigned in Sprint 33; backend staging tests passing.”
+            </p>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant font-body-semibold text-body-semibold hover:bg-surface-container transition-colors" type="button">
+                Reject
+              </button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-body-semibold text-body-semibold hover:bg-primary transition-colors" type="button">
+                Approve Request
+              </button>
+</div>
+</div>
+<!-- Card 3: Bilal Tariq -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Studio portrait of Bilal Tariq, a creative senior product designer with glasses and casual black turtleneck, clean minimalistic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg55AYYv22-e7P6jTmYU9kapqwulHdlg0Bn20ORPMhPbwRawnOO3nV4tYRuqXHJSblh3oDC9XOxNgrGjkmLhhPFvxWYizT1dv-p9tnC02UZl251-gJJULJIeWrLZJwHQm163DG25UPRTWAud8eXk6R1rhmayPzdyoUfI0sAwuoslzwXnDgZUSsqHqsO_wGelcSAnjtbj6YysDNOmrG8urtzfh7CaJ_krOs0UGUn7cuwZbnvJhUAZZUPQ"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-md text-headline-md text-on-surface">Bilal Tariq</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-outline font-label-sm text-label-sm font-mono">EMP-003</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Senior UI/UX Designer</span>
+</div>
+<span class="font-label-md text-label-md text-outline">Product &amp; Design Group</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-semibold">
+                  Medical / Sick
+                </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md font-semibold">
+                  1 Working Day
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-md bg-surface-container-low px-space-md py-2 rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">medical_services</span>
+<span class="font-body-semibold text-body-semibold text-on-surface">Nov 08, 2024</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-primary cursor-pointer hover:underline">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+<span>Medical_Slip_08Nov.pdf</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              “Severe migraine and doctor appointment in the afternoon. UI handoff components have been pushed to Figma system.”
+            </p>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline">Remaining Sick: 6 of 8 days</span>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant font-body-semibold text-body-semibold hover:bg-surface-container transition-colors" type="button">
+                  Reject
+                </button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-body-semibold text-body-semibold hover:bg-primary transition-colors" type="button">
+                  Approve Request
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Panel: Coverage Calendar & Availability Heatmap (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Department Coverage Gauge Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-on-surface">Staffing Health</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Optimal</span>
+</div>
+<div class="flex items-center gap-space-lg p-space-md bg-surface-container-low rounded-lg">
+<div class="relative w-16 h-16 flex items-center justify-center flex-shrink-0">
+<svg class="w-16 h-16 transform -rotate-90">
+<circle class="text-surface-container" cx="32" cy="32" fill="transparent" r="26" stroke="currentColor" stroke-width="5"></circle>
+<circle class="text-primary-container" cx="32" cy="32" fill="transparent" r="26" stroke="currentColor" stroke-dasharray="163" stroke-dashoffset="13" stroke-linecap="round" stroke-width="5"></circle>
+</svg>
+<span class="absolute font-display-md text-display-md text-on-surface font-bold">92%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Engineering Coverage</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">23 of 25 active personnel scheduled on deck</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-outline">Product &amp; Design</span>
+<span class="font-body-semibold text-on-surface">88% Capacity</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 88%"></div>
+</div>
+</div>
+</div>
+<!-- Team Availability Mini-Calendar Widget -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_month</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">November 2024</h3>
+</div>
+<div class="flex items-center gap-1 text-outline">
+<button class="w-7 h-7 flex items-center justify-center rounded hover:bg-surface-container hover:text-on-surface"><span class="material-symbols-outlined text-[16px]">chevron_left</span></button>
+<button class="w-7 h-7 flex items-center justify-center rounded hover:bg-surface-container hover:text-on-surface"><span class="material-symbols-outlined text-[16px]">chevron_right</span></button>
+</div>
+</div>
+<!-- Mini Calendar Grid -->
+<div class="grid grid-cols-7 gap-1 text-center font-label-sm text-label-sm">
+<span class="text-outline py-1 font-semibold">Mo</span>
+<span class="text-outline py-1 font-semibold">Tu</span>
+<span class="text-outline py-1 font-semibold">We</span>
+<span class="text-outline py-1 font-semibold">Th</span>
+<span class="text-outline py-1 font-semibold">Fr</span>
+<span class="text-outline/60 py-1 font-semibold">Sa</span>
+<span class="text-outline/60 py-1 font-semibold">Su</span>
+<!-- Oct filler -->
+<span class="py-1.5 text-outline/40">28</span>
+<span class="py-1.5 text-outline/40">29</span>
+<span class="py-1.5 text-outline/40">30</span>
+<span class="py-1.5 text-outline/40">31</span>
+<!-- Nov days -->
+<span class="py-1.5 text-on-surface rounded hover:bg-surface-container">1</span>
+<span class="py-1.5 text-outline/60">2</span>
+<span class="py-1.5 text-outline/60">3</span>
+<span class="py-1.5 text-on-surface rounded hover:bg-surface-container">4</span>
+<span class="py-1.5 text-on-surface rounded hover:bg-surface-container">5</span>
+<span class="py-1.5 text-on-surface rounded hover:bg-surface-container">6</span>
+<span class="py-1.5 text-on-surface rounded hover:bg-surface-container">7</span>
+<!-- Day 8 has Bilal sick leave -->
+<span class="py-1.5 bg-error-container text-on-error-container font-bold rounded relative cursor-pointer group" title="Bilal Tariq: Sick Leave">
+              8
+              <span class="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-error"></span>
+</span>
+<span class="py-1.5 text-outline/60">9</span>
+<span class="py-1.5 text-outline/60">10</span>
+<!-- Nov 11 - 12 (Sara's requested leave highlighted) -->
+<span class="py-1.5 bg-secondary-container text-on-secondary-container font-bold rounded cursor-pointer group relative" title="Sara Ahmed: Requested Casual">
+              11
+              <span class="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-secondary"></span>
+</span>
+<span class="py-1.5 bg-secondary-container text-on-secondary-container font-bold rounded cursor-pointer group relative" title="Sara Ahmed: Requested Casual">
+              12
+              <span class="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-secondary"></span>
+</span>
+<span class="py-1.5 text-on-surface rounded hover:bg-surface-container">13</span>
+<span class="py-1.5 text-on-surface rounded hover:bg-surface-container">14</span>
+<span class="py-1.5 text-on-surface rounded hover:bg-surface-container">15</span>
+<span class="py-1.5 text-outline/60">16</span>
+<span class="py-1.5 text-outline/60">17</span>
+<!-- Nov 18 - 22 (Hamza Rehman requested) -->
+<span class="py-1.5 bg-surface-container-high text-primary font-semibold rounded cursor-pointer" title="Hamza Rehman">18</span>
+<span class="py-1.5 bg-surface-container-high text-primary font-semibold rounded cursor-pointer" title="Hamza Rehman">19</span>
+<span class="py-1.5 bg-surface-container-high text-primary font-semibold rounded cursor-pointer" title="Hamza Rehman">20</span>
+<span class="py-1.5 bg-surface-container-high text-primary font-semibold rounded cursor-pointer" title="Hamza Rehman">21</span>
+<span class="py-1.5 bg-surface-container-high text-primary font-semibold rounded cursor-pointer" title="Hamza Rehman">22</span>
+<span class="py-1.5 text-outline/60">23</span>
+<span class="py-1.5 text-outline/60">24</span>
+<span class="py-1.5 text-on-surface rounded hover:bg-surface-container">25</span>
+<span class="py-1.5 text-on-surface rounded hover:bg-surface-container">26</span>
+<span class="py-1.5 text-on-surface rounded hover:bg-surface-container">27</span>
+<span class="py-1.5 text-on-surface rounded hover:bg-surface-container">28</span>
+<span class="py-1.5 text-on-surface rounded hover:bg-surface-container">29</span>
+<span class="py-1.5 text-outline/60">30</span>
+<span class="py-1.5 text-outline/40">1</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs font-label-sm text-label-sm text-outline border-t border-surface-container">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span>Pending Review</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error-container"></span>
+<span>Medical / Sick</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-high"></span>
+<span>Annual Leave</span>
+</div>
+</div>
+</div>
+<!-- Quick Policy Reminder -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Auto-Approval Thresholds</span>
+<p class="font-label-sm text-label-sm text-outline mt-0.5">
+              Requests ≤ 2 days with &gt; 90% sprint handoff compliance qualify for batch-clearing.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- HR Decision Modal (Preview overlay or slide-out drawer) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm hidden transition-opacity" id="decisionModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-xl w-full mx-space-md overflow-hidden shadow-2xl flex flex-col animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="px-space-xl py-space-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Application Review</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Review Leave — Sara Ahmed (EMP-002)</h3>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" id="closeModalBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-xl flex flex-col gap-space-lg">
+<!-- Summary Box -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">celebration</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Casual Leave • 2 Working Days</span>
+<span class="font-label-sm text-label-sm text-outline">Mon, Nov 11, 2024 — Tue, Nov 12, 2024</span>
+</div>
+</div>
+<span class="font-label-md text-label-md px-2 py-1 rounded bg-surface-container-lowest text-primary font-bold shadow-sm">
+            Balance: 9 Available
+          </span>
+</div>
+<!-- Decision Radio Buttons -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-outline">Decision Selection</label>
+<div class="grid grid-cols-2 gap-space-md">
+<label class="flex items-center gap-space-sm p-space-md rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="hr_decision" type="radio" value="approve"/>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Approve Leave</span>
+<span class="font-label-sm text-label-sm text-outline">Grant requested days</span>
+</div>
+</label>
+<label class="flex items-center gap-space-sm p-space-md rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input class="w-4 h-4 text-error focus:ring-error accent-error" name="hr_decision" type="radio" value="reject"/>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Reject Application</span>
+<span class="font-label-sm text-label-sm text-outline">Provide required reason</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Manager / HR Notes text area -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-outline flex items-center justify-between" for="hrNotes">
+<span>Manager / HR Operational Notes</span>
+<span class="font-label-sm text-label-sm text-outline normal-case">Visible to employee</span>
+</label>
+<textarea class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 resize-none" id="hrNotes" placeholder="Provide comments or coverage guidelines..." rows="3">Approved. Please ensure handoff of PR #214 to Hamza before leaving.</textarea>
+</div>
+<!-- Notification Banner -->
+<div class="flex items-start gap-space-sm p-space-md rounded-lg bg-surface-container-high text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary flex-shrink-0 mt-0.5">notifications_active</span>
+<p class="font-label-sm text-label-sm text-outline">
+            Employee will be notified instantly via in-app notification, email, and configured Slack workspace channel (#dev-ops-standup).
+          </p>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="px-space-xl py-space-md bg-surface-container-low flex items-center justify-end gap-space-md">
+<button class="px-space-lg py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-semibold text-body-semibold hover:bg-surface-container transition-colors shadow-sm" id="cancelModalBtn" type="button">
+          Cancel
+        </button>
+<button class="px-space-xl py-2 rounded-lg bg-primary-container text-on-primary font-body-semibold text-body-semibold hover:bg-primary transition-all shadow-md shadow-primary/25" id="confirmDecisionBtn" type="button">
+          Confirm Decision
+        </button>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Javascript -->
+<script>
+    (function() {
+      const modal = document.getElementById('decisionModal');
+      const openBtn = document.getElementById('openReviewModalBtn');
+      const closeBtn = document.getElementById('closeModalBtn');
+      const cancelBtn = document.getElementById('cancelModalBtn');
+      const confirmBtn = document.getElementById('confirmDecisionBtn');
+      const batchBtn = document.getElementById('batchApproveBtn');
+
+      function openModal() {
+        modal.classList.remove('hidden');
+      }
+
+      function closeModal() {
+        modal.classList.add('hidden');
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openModal);
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+
+      // Close modal on backdrop click
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+
+      if (confirmBtn) {
+        confirmBtn.addEventListener('click', () => {
+          confirmBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Processing...';
+          setTimeout(() => {
+            closeModal();
+            confirmBtn.innerHTML = 'Confirm Decision';
+            alert('Leave application decision recorded and synced with payroll & timesheets.');
+          }, 600);
+        });
+      }
+
+      if (batchBtn) {
+        batchBtn.addEventListener('click', () => {
+          const original = batchBtn.innerHTML;
+          batchBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Approving...';
+          setTimeout(() => {
+            batchBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span> 2 Leaves Cleared';
+            batchBtn.classList.remove('bg-primary-container');
+            batchBtn.classList.add('bg-primary');
+          }, 800);
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

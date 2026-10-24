@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline-variant":"#bdc9c1","surface-tint":"#006c4e","on-tertiary-container":"#8fffcb","on-secondary":"#ffffff","primary":"#005d42","error":"#ba1a1a","primary-container":"#047857","secondary-container":"#6df5e1","surface-variant":"#dae2fd","inverse-surface":"#283044","surface-dim":"#d2d9f4","tertiary-container":"#007853","tertiary":"#005d3f","surface-bright":"#faf8ff","on-background":"#131b2e","surface-container-lowest":"#ffffff","tertiary-fixed-dim":"#68dba9","on-error":"#ffffff","secondary-fixed":"#71f8e4","background":"#faf8ff","on-tertiary":"#ffffff","tertiary-fixed":"#85f8c4","on-primary-fixed":"#002115","on-surface-variant":"#3e4943","on-tertiary-fixed-variant":"#005137","error-container":"#ffdad6","on-primary-fixed-variant":"#00513a","on-secondary-fixed-variant":"#005048","on-secondary-container":"#006f64","on-tertiary-fixed":"#002114","surface-container-low":"#f2f3ff","surface-container-high":"#e2e7ff","surface":"#faf8ff","inverse-on-surface":"#eef0ff","inverse-primary":"#7bd8b1","on-primary":"#ffffff","secondary":"#006b5f","on-secondary-fixed":"#00201c","surface-container-highest":"#dae2fd","on-error-container":"#93000a","primary-fixed":"#97f5cc","on-surface":"#131b2e","outline":"#6e7a73","on-primary-container":"#9ffdd3","secondary-fixed-dim":"#4fdbc8","surface-container":"#eaedff","primary-fixed-dim":"#7bd8b1"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-2xl":"2rem",gutter:"1rem","space-md":"0.75rem","space-sm":"0.5rem","space-xs":"0.25rem","space-xl":"1.5rem","space-lg":"1rem",margin:"1.5rem","margin-mobile":"1rem","gutter-mobile":"0.75rem"},fontFamily:{"headline-md":["Outfit"],"label-sm":["Hanken Grotesk"],"display-lg":["Outfit"],"body-semibold":["Hanken Grotesk"],"display-md":["Outfit"],"label-md":["Hanken Grotesk"],"metric-stat":["Outfit"],"headline-lg":["Outfit"],"body-lg":["Hanken Grotesk"],"body-md":["Hanken Grotesk"]},fontSize:{"headline-md":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"500"}],"display-lg":["30px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-semibold":["14px",{lineHeight:"20px",fontWeight:"600"}],"display-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"metric-stat":["28px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface-container-lowest border-b border-outline-variant/30 flex items-center justify-between px-6"><div class="flex items-center gap-3"><img alt="HCM Lite Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V5xPVIVeVFqcUgPAULUCqgx-LXEMHDAfbcwdeznkrfHSfYQfvmM-J-EK5Kb_kg8e_FBVAy7pLmtR1ZoOx46C1zVNMN2QpqyfqbfbwUuYdlLy4um9XAxzUE8vcyX5dh39xBTrLjwWvyqMXUQwQbAb8ZjqF_F3rGTgiTTvahuXfMexK7TGdeUmeLATH7fzH_L_lOaSZLm0p5RH8uheQ-IVR2j0S7pZTaAdmhzBK7mOdRFNaX07Kvxcufy9aS"/><div class="flex items-center gap-2"><span class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">HCM Lite</span><span class="font-label-sm text-label-sm uppercase tracking-wider bg-primary-fixed/30 text-primary px-2 py-0.5 rounded-full border border-primary-fixed font-semibold">AI-Assisted HR</span></div></div><div class="flex items-center gap-4"><button class="flex items-center gap-1.5 bg-primary-container text-on-primary px-3 py-1.5 rounded-full font-label-md text-label-md font-semibold shadow-sm hover:bg-primary transition-colors cursor-pointer" type="button"><span class="material-symbols-outlined text-[16px] text-on-primary-container animate-pulse">auto_awesome</span><span>Ask AI</span></button><button aria-label="Notifications" class="relative p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 bg-error text-on-error rounded-full font-label-sm text-[10px] flex items-center justify-center font-bold leading-none">3</span></button><div class="h-6 w-px bg-outline-variant/40"></div><div class="flex items-center gap-3 pl-1"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu4xEW-m9MibUNOoh9zKOyjKHJdvKNpZ3MKyfDogxOOSZC4FuBQIiTHqZoiJvA2fjbJz3xuntE-QRV7pvNiKz9HjWbIRGm2aXbZzqLPtLRbhqBb05PoTp8OxxCJIVXAehUzywHFO_-UlcavGyO0FX1f1OKUjUCi5NwR23Ucz8kR5wRVWf_WWzC6wdekS8Iy3am0U9qyNTdoqShmnq3QXhZsAL38UfhDXax83Qent0hhCQ3bCqehT5DAg"/></div><div class="hidden sm:flex flex-col text-left"><div class="flex items-center gap-2"><span class="font-body-semibold text-body-semibold text-on-surface leading-tight">Ayesha Khan</span><span class="font-label-sm text-[10px] px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-semibold uppercase tracking-wider border border-outline-variant/30">Admin</span></div></div><button aria-label="User menu" class="text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">expand_more</span></button></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant/30 z-40 flex flex-col justify-between py-5 px-3 overflow-y-auto"><div class="flex flex-col gap-1"><div class="font-label-sm text-label-sm text-outline px-3 mb-2 uppercase tracking-wider font-semibold">Admin Navigation</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm rounded-xl"><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-body-semibold text-body-semibold text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Overview</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-body-semibold text-body-semibold text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="employees-and-directory" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Employees &amp; Directory</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-body-semibold text-body-semibold text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="payroll-and-compensation" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span>Payroll &amp; Compensation</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-body-semibold text-body-semibold text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="time-and-attendance" href="#"><span class="material-symbols-outlined text-[20px]">schedule</span><span>Time &amp; Attendance</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-body-semibold text-body-semibold text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="departments-and-org" href="#"><span class="material-symbols-outlined text-[20px]">account_tree</span><span>Departments &amp; Org</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-body-semibold text-body-semibold text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="audit-logs-and-security" href="#"><span class="material-symbols-outlined text-[20px]">verified_user</span><span>Audit Logs &amp; Security</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-body-semibold text-body-semibold text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings-and-policies" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Settings &amp; Policies</span></a></nav></div><div class="mt-4 pt-4 border-t border-outline-variant/30"><div class="bg-surface-container-low border border-primary-fixed rounded-xl p-3.5"><div class="flex items-center gap-2 mb-1.5 text-primary"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span class="font-label-md text-label-md font-bold">AI Copilot Active</span></div><p class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed">Role-scoped intelligence &amp; natural-language workflows ready.</p></div></div></aside><div class="pl-64"><main class="pt-16 min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Top Command & Breadcrumb Strip -->
+<div class="px-6 pt-5 pb-4 bg-surface-container-lowest shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col gap-1.5">
+<nav class="flex items-center gap-2 font-label-md text-label-md text-outline">
+<span class="hover:text-primary cursor-pointer transition-colors">Home</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary cursor-pointer transition-colors">Communications</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Company Announcements</span>
+</nav>
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Company Announcements &amp; Broadcasts</h1>
+<div class="flex items-center gap-2 px-2.5 py-1 rounded-full bg-primary-fixed/40 text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span>4 Active Broadcasts • All Staff Synced</span>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-2.5">
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-body-semibold text-body-semibold transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">archive</span>
+<span>Archive &amp; Logs</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-body-semibold text-body-semibold transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">settings</span>
+<span>Delivery Rules</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-body-semibold text-body-semibold shadow-md transition-all group" id="open-composer-btn" type="button">
+<span class="material-symbols-outlined text-[20px] group-hover:rotate-90 transition-transform">add</span>
+<span>Post Announcement</span>
+<span class="text-[10px] px-1.5 py-0.5 rounded bg-primary text-on-primary-container font-label-sm font-bold tracking-wider">ADMIN</span>
+</button>
+</div>
+</div>
+<!-- Main Body Layout: Feed (Col 8) + Sidebar (Col 4) -->
+<div class="px-6 py-6 grid grid-cols-12 gap-6 items-start">
+<!-- LEFT STREAM (Col 12 to Col 8) -->
+<section class="col-span-12 xl:col-span-8 flex flex-col gap-5">
+<!-- Filters and Category Tabs -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<!-- Category Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0" id="category-tabs">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold shrink-0 transition-all">All Broadcasts</button>
+<button class="px-3 py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold shrink-0 transition-all">Urgent (1)</button>
+<button class="px-3 py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold shrink-0 transition-all">Executive</button>
+<button class="px-3 py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold shrink-0 transition-all">Policy Updates</button>
+<button class="px-3 py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold shrink-0 transition-all">Social &amp; Culture</button>
+</div>
+<!-- Audience Selector Filter -->
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-label-sm text-label-sm text-outline">Audience:</span>
+<div class="relative">
+<select class="bg-surface-container-low font-body-semibold text-body-semibold text-on-surface rounded-lg pl-3 pr-8 py-1.5 text-xs appearance-none focus:outline-none cursor-pointer">
+<option>All Staff (48)</option>
+<option>Engineering (22)</option>
+<option>People Ops &amp; Admin (8)</option>
+<option>Operations &amp; Security (18)</option>
+</select>
+<span class="material-symbols-outlined text-[16px] text-outline absolute right-2 top-2 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Quick AI Summarizer Banner -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-surface-container-high via-surface-container-lowest to-surface-container-high p-4 shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-bold">Executive AI Summary</div>
+<p class="font-body-md text-body-md text-on-surface-variant">1 critical system outage notice pending acknowledgment; October 2026 payroll slips published with 100% tax documentation.</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container font-label-md text-label-md font-bold shadow-sm shrink-0" type="button">
+          Listen Audio (1m)
+        </button>
+</div>
+<!-- ANNOUNCEMENT CARD 1: URGENT -->
+<article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-4 relative overflow-hidden transition-all hover:shadow-md">
+<!-- Urgent Accent Bar -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<!-- Card Header Info -->
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Corporate headshot of Tariq Vance, VP of Engineering, warm studio lighting, professional attire, modern tech executive portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuf7_8O0-QeYBXDTwk_1T5kS9ck_cO1k-m3sOh9vZIezsJ0XPafswykoVBs4f5sWzyS0kl07DccZFO_XbjomZHJ45GS5zx_PSSU4irF6Z9GdvOXJMiFK3IcecS-BX7EX40aDd5Kg8g0Owpw1ZLEzA4JuYF6_F6LvliwoPkIQH34wPO7XWsV1f7ED13WMnkvNsU7CI_Hj9aN9DE4V0gFgwMfMWxDlMbk6-dFqgBqDnVAyBmbSFwCZDhKQ"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-body-semibold text-body-semibold text-on-surface font-bold">Tariq Vance</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold uppercase tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">warning</span> URGENT ACTION
+                </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] font-bold">VP Eng &amp; Admin</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Posted 2 hours ago • Broadcaster ID: #BC-8921 • Delivery: Push + SMS</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-outline">
+<button class="p-1.5 hover:text-primary rounded-lg hover:bg-surface-container transition-colors" title="Pin announcement">
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">push_pin</span>
+</button>
+<button class="p-1.5 hover:text-on-surface rounded-lg hover:bg-surface-container transition-colors" title="More options">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Card Title & Body -->
+<div class="flex flex-col gap-2">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Emergency Biometric Firmware Update &amp; HQ Security Perimeter Maintenance</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            All turnstiles and biometric terminals at Clifton HQ will undergo automated firmware updates starting at <span class="font-semibold text-on-surface">10:00 PM PKT tonight</span>. During this 4-hour window, physical thumbprint scanners will be disconnected.
+          </p>
+<!-- Callout Box -->
+<div class="bg-surface-container-low rounded-xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 mt-1">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">verified_user</span>
+<div>
+<p class="font-body-semibold text-body-semibold text-on-surface">Failover Protocol: Mobile GPS Geofenced Clock-In</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Night shift workers must use the HCM Lite Mobile App. Geofence radius expanded to 150m around HQ Main Gate.</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md font-semibold shrink-0">
+              View Geofence Map
+            </button>
+</div>
+</div>
+<!-- Interactive Acknowledgment & Metrics Bar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pt-4 mt-1 bg-surface-bright rounded-xl p-3 gap-3">
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-body-semibold text-body-semibold shadow-sm transition-all" id="ack-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Acknowledge Receipt</span>
+</button>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">38 / 48 Acknowledged</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">10 Pending</span>
+</div>
+</div>
+<!-- Progress bar -->
+<div class="flex items-center gap-3">
+<div class="w-32 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 79%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-semibold">79%</span>
+</div>
+</div>
+</article>
+<!-- ANNOUNCEMENT CARD 2: HIGH -->
+<article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-4 relative overflow-hidden transition-all hover:shadow-md">
+<!-- Amber Accent Bar -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Warm and professional business headshot of Morgan Vance, Head of People Operations, modern enterprise office background with glass walls and natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF1zSWnPmqKyalv6UJteXSB-U_BRPFaWuN1WEBlFWnam6_uwjjRxVYFCgjBa6eMMyC5-mJwqfe7fbtSODi03uTO3XPbbBXh_Ihzxdcp0JWn2ihG3cIBA9tCVIiaD6lhjtJI-eAgJWfdbBhlZm5ZcG-mrpMyH3G_gEQijrcSWZOpHfA3wW5Xz0EpEPyD_M0gs7euJQ6jOdC28Im04oKE6UGEvgk_3EDdhhswbdJxKz8Ne-WI6aOyZSQ4g"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-body-semibold text-body-semibold text-on-surface font-bold">Morgan Vance</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold uppercase tracking-wide">
+                  HIGH PRIORITY
+                </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] font-bold">Head of People Ops</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Posted Yesterday at 4:45 PM • Read confirmation: 46/48 Staff</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-outline">
+<button class="p-1.5 hover:text-on-surface rounded-lg hover:bg-surface-container transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+<button class="p-1.5 hover:text-on-surface rounded-lg hover:bg-surface-container transition-colors" title="More options">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">October 2026 Payroll Finalized &amp; Digital Payslips Released</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            All bank disbursements for October 2026 compensation have processed successfully to registered HBL and Meezan Bank corporate accounts. Digital encrypted payslips featuring verified withholding tax certificates are available in your self-service employee portal.
+          </p>
+<!-- Attachment Pill Preview -->
+<div class="flex flex-wrap items-center gap-2.5 pt-2">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container font-label-md text-label-md text-on-surface cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px] text-primary">picture_as_pdf</span>
+<span>General_Tax_Schedule_Q4_2026.pdf (1.2 MB)</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container font-label-md text-label-md text-on-surface cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px] text-primary">table_chart</span>
+<span>EOBI_Deduction_Clarification.xlsx (420 KB)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-surface-container-high">
+<div class="flex items-center gap-4 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">visibility</span> 46 Views</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">forum</span> 5 Comments</span>
+</div>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-primary font-body-semibold text-body-semibold transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>View My Payslip</span>
+</button>
+</div>
+</article>
+<!-- ANNOUNCEMENT CARD 3: NORMAL -->
+<article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-4 relative overflow-hidden transition-all hover:shadow-md">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-bold font-headline-md">
+              PO
+            </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-body-semibold text-body-semibold text-on-surface font-bold">People Operations Desk</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold uppercase tracking-wide">
+                  NORMAL
+                </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] font-bold">Campus Wide</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Posted 3 days ago • Scheduled Campus Drive</span>
+</div>
+</div>
+<button class="p-1.5 hover:text-on-surface text-outline rounded-lg hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Annual Health &amp; Wellness Flu Vaccination Drive at Clifton HQ</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            In partnership with South City Hospital, on-site quadrivalent influenza vaccination stalls will be stationed at the 4th Floor Wellness Room on Thursday, Nov 5th, from 11:00 AM to 4:00 PM. Immediate family members can also be registered at discounted corporate rates.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">📍 Clifton Campus Wellness Suite</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">🗓 Nov 5, 2026</span>
+</div>
+<button class="px-3.5 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-colors">
+            Register Slot (12 Remaining)
+          </button>
+</div>
+</article>
+<!-- ANNOUNCEMENT CARD 4: LOW -->
+<article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-4 relative overflow-hidden transition-all hover:shadow-md">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-outline-variant"></div>
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Headshot portrait of Workplace Experience Lead smiling in a vibrant casual collaborative office setting with greenery in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABf8hVuUyYB2iZBJgA2OkdK-6kYvO3DFRy3XFozdQEEmIejJ8o_ZhcJd8kZrLc7gnkvKeIo5mOYuKssg9uhXAYKetaY7kv9uQ6su0kHLE3vWePiwDWcq8ZHP_Vykjgt1f5ELz6c-D8JinOmmnNAqWb0C8snMbO4GYimIGXEOqHsYz_DSwUpjiD_KtnP6g20OiqKnAJv-Io0PfLbf-vh10raM0eND16X3eoaW0lYNhLvvRuwkeI-RzzkQ"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-body-semibold text-body-semibold text-on-surface font-bold">Workplace Experience Team</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold uppercase tracking-wide">
+                  LOW
+                </span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Posted 5 days ago</span>
+</div>
+</div>
+<button class="p-1.5 hover:text-on-surface text-outline rounded-lg hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<div class="flex flex-col gap-1.5">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Cafeteria Subsidy Menu Revision for Winter 2026</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            The cafeteria management committee has published updated nutritious daily lunch menus along with enhanced subsidized organic soup and coffee options.
+          </p>
+</div>
+</article>
+</section>
+<!-- RIGHT SIDEBAR (Col 12 to Col 4) -->
+<aside class="col-span-12 xl:col-span-4 flex flex-col gap-6">
+<!-- DELIVERY ANALYTICS WIDGET -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">analytics</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Broadcast Delivery Health</h3>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-primary-fixed/30 px-2 py-0.5 rounded-full">Real-time</span>
+</div>
+<!-- Metric Numbers -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low rounded-xl p-4 flex flex-col">
+<span class="font-metric-stat text-metric-stat text-on-surface font-bold">98.4%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Total Read Rate</span>
+<div class="flex items-center gap-1 text-primary text-xs mt-2 font-semibold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +3.2% vs Q3
+            </div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-4 flex flex-col">
+<span class="font-metric-stat text-metric-stat text-on-surface font-bold">34 <span class="text-sm font-normal text-outline">min</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Avg Acknowledge SLA</span>
+<div class="flex items-center gap-1 text-primary text-xs mt-2 font-semibold">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Ultra Fast
+            </div>
+</div>
+</div>
+<!-- Minimal SVG Sparkline/Bar visualization -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Weekly Engagement Velocity</span>
+<span class="font-bold text-on-surface">48/48 Reached</span>
+</div>
+<div class="h-14 flex items-end gap-1.5 pt-2">
+<div class="w-full bg-surface-container-high rounded-t hover:bg-primary-container transition-colors h-[40%]" title="Mon"></div>
+<div class="w-full bg-surface-container-high rounded-t hover:bg-primary-container transition-colors h-[65%]" title="Tue"></div>
+<div class="w-full bg-surface-container-high rounded-t hover:bg-primary-container transition-colors h-[50%]" title="Wed"></div>
+<div class="w-full bg-surface-container-high rounded-t hover:bg-primary-container transition-colors h-[90%]" title="Thu"></div>
+<div class="w-full bg-primary-container rounded-t h-[100%]" title="Fri (Today)"></div>
+<div class="w-full bg-surface-container-high rounded-t h-[20%]" title="Sat"></div>
+<div class="w-full bg-surface-container-high rounded-t h-[15%]" title="Sun"></div>
+</div>
+<div class="flex justify-between font-label-sm text-[10px] text-outline font-semibold">
+<span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span>
+</div>
+</div>
+</div>
+<!-- UPCOMING SCHEDULED BROADCASTS -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">event_upcoming</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Upcoming Scheduled</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-bold">2 Queued</span>
+</div>
+<div class="flex flex-col gap-3">
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-2 hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] font-bold">Townhall</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Tomorrow, 10:00 AM</span>
+</div>
+<h4 class="font-body-semibold text-body-semibold text-on-surface font-bold">Saylani Hackathon Winners &amp; Merit Awards Townhall</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Live streaming link + Executive panel Q&amp;A pre-configured.</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-2 hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] font-bold">Policy</span>
+<span class="font-label-sm text-label-sm text-outline font-bold">Nov 10, 2026</span>
+</div>
+<h4 class="font-body-semibold text-body-semibold text-on-surface font-bold">2027 Annual Leave Carry-Forward Deadlines</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Targeting full engineering &amp; leadership roster.</p>
+</div>
+</div>
+</div>
+<!-- BROADCASTER SLA & NOTIFICATION ETIQUETTE -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[20px]">verified</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Notification SLA Policy</h3>
+</div>
+<div class="flex flex-col gap-3 font-label-sm text-label-sm">
+<div class="flex items-start gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error mt-1 shrink-0"></span>
+<div>
+<span class="font-bold text-on-surface">URGENT:</span> Triggers mobile lockscreen push alerts, immediate SMS, and requires mandatory click acknowledgment.
+            </div>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary mt-1 shrink-0"></span>
+<div>
+<span class="font-bold text-on-surface">HIGH:</span> Broadcasted to company Slack channel, email digest, and self-service notification badge.
+            </div>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container mt-1 shrink-0"></span>
+<div>
+<span class="font-bold text-on-surface">NORMAL / LOW:</span> Quiet feeds visible in employee feed and weekly digest without push interruptions.
+            </div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<!-- INTEGRATED 'CREATE ANNOUNCEMENT' COMPOSER MODAL / OVERLAY -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-200" id="composer-modal">
+<div class="bg-surface-container-lowest rounded-2xl shadow-2xl max-w-2xl w-full flex flex-col overflow-hidden max-h-[921px]">
+<!-- Modal Header -->
+<div class="px-6 py-4 bg-surface-container-low flex items-center justify-between border-b border-surface-container-high">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">New Company Broadcast</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Admin &amp; HR Privileged Access</p>
+</div>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" id="close-composer-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body Form -->
+<div class="p-6 overflow-y-auto flex flex-col gap-5">
+<!-- Broadcast Title Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-bold">Broadcast Subject / Title</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-semibold text-body-semibold focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" type="text" value="Q4 Executive All-Hands &amp; 2026 Strategy Preview"/>
+</div>
+<!-- Priority Selector -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold">Select Severity &amp; Priority Level</label>
+<div class="grid grid-cols-4 gap-2.5">
+<button class="priority-btn py-2 px-3 rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-all" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span> LOW
+            </button>
+<button class="priority-btn py-2 px-3 rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-all" type="button">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> NORMAL
+            </button>
+<button class="priority-btn py-2 px-3 rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-all" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> HIGH
+            </button>
+<button class="priority-btn active-urgent py-2 px-3 rounded-xl bg-error-container text-on-error-container font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm transition-all ring-2 ring-error" type="button">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span> URGENT
+            </button>
+</div>
+</div>
+<!-- Audience Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-bold">Target Broadcast Audience</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="cursor-pointer flex items-center justify-between p-3 rounded-xl bg-primary-fixed/20 border border-primary text-primary font-body-semibold text-body-semibold">
+<span>All Staff (48)</span>
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</label>
+<label class="cursor-pointer flex items-center justify-between p-3 rounded-xl bg-surface-container text-on-surface-variant font-body-semibold text-body-semibold hover:bg-surface-container-high">
+<span>HR &amp; Leadership</span>
+<span class="material-symbols-outlined text-[18px] opacity-20">radio_button_unchecked</span>
+</label>
+<label class="cursor-pointer flex items-center justify-between p-3 rounded-xl bg-surface-container text-on-surface-variant font-body-semibold text-body-semibold hover:bg-surface-container-high">
+<span>Engineering Dept</span>
+<span class="material-symbols-outlined text-[18px] opacity-20">radio_button_unchecked</span>
+</label>
+</div>
+</div>
+<!-- Rich Content Editor Preview -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-bold">Broadcast Body &amp; Instructions</label>
+<div class="flex items-center gap-1 text-outline">
+<button class="p-1 hover:text-on-surface rounded hover:bg-surface-container" type="button"><span class="material-symbols-outlined text-[18px]">format_bold</span></button>
+<button class="p-1 hover:text-on-surface rounded hover:bg-surface-container" type="button"><span class="material-symbols-outlined text-[18px]">format_italic</span></button>
+<button class="p-1 hover:text-on-surface rounded hover:bg-surface-container" type="button"><span class="material-symbols-outlined text-[18px]">format_list_bulleted</span></button>
+<button class="p-1 hover:text-on-surface rounded hover:bg-surface-container" type="button"><span class="material-symbols-outlined text-[18px]">link</span></button>
+</div>
+</div>
+<textarea class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20 leading-relaxed transition-all" rows="4">Please join CEO Bilal and the executive team for our Q4 All-Hands Townhall. We will review our product roadmap for HCM Lite 2.0, share annual bonus guidelines, and hold an open live Q&amp;A.
+
+Key Details:
+• Date: Friday, November 6th at 3:00 PM PKT
+• Hybrid Venue: Clifton Auditorium &amp; Google Meet link
+• Pre-submit your questions via the HCM Copilot widget.</textarea>
+</div>
+<!-- Push notification & Email Alert Checkbox -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary cursor-pointer" id="push-alert" type="checkbox"/>
+<label class="font-body-semibold text-body-semibold text-on-surface cursor-pointer select-none" for="push-alert">
+            Send instant mobile push alert &amp; dispatch priority email notification
+          </label>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="px-6 py-4 bg-surface-container-low flex items-center justify-between border-t border-surface-container-high">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-body-semibold text-body-semibold transition-colors" id="discard-btn" type="button">
+          Discard Draft
+        </button>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-body-semibold text-body-semibold transition-colors" type="button">
+            Save Draft
+          </button>
+<button class="flex items-center gap-2 px-5 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-body-semibold text-body-semibold shadow-md transition-all" id="publish-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Publish Broadcast</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Interactive Script -->
+<script>
+    (function initAnnouncements() {
+      const openBtn = document.getElementById('open-composer-btn');
+      const closeBtn = document.getElementById('close-composer-btn');
+      const discardBtn = document.getElementById('discard-btn');
+      const publishBtn = document.getElementById('publish-btn');
+      const modal = document.getElementById('composer-modal');
+      const ackBtn = document.getElementById('ack-btn');
+
+      if (openBtn && modal) {
+        openBtn.addEventListener('click', () => {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        });
+      }
+
+      function closeModal() {
+        if (modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      }
+
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (discardBtn) discardBtn.addEventListener('click', closeModal);
+      
+      if (publishBtn) {
+        publishBtn.addEventListener('click', () => {
+          publishBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Publishing...';
+          setTimeout(() => {
+            closeModal();
+            publishBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">send</span> Publish Broadcast';
+          }, 600);
+        });
+      }
+
+      if (ackBtn) {
+        ackBtn.addEventListener('click', () => {
+          ackBtn.classList.remove('bg-primary-container', 'hover:bg-primary');
+          ackBtn.classList.add('bg-surface-container-high', 'text-primary');
+          ackBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span> Acknowledged';
+          ackBtn.disabled = true;
+        });
+      }
+
+      // Priority buttons toggle
+      const priorityBtns = document.querySelectorAll('.priority-btn');
+      priorityBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          priorityBtns.forEach(b => {
+            b.classList.remove('ring-2', 'ring-error', 'ring-primary', 'bg-error-container', 'text-on-error-container');
+            b.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          btn.classList.add('bg-primary-container', 'text-on-primary', 'ring-2', 'ring-primary');
+        });
+      });
+    })();
+  </script>
+</div></main></div><button aria-label="Open AI Copilot" class="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary px-4 py-3 rounded-full shadow-lg ring-4 ring-primary/10 transition-all font-body-semibold text-body-semibold cursor-pointer" type="button"><span class="material-symbols-outlined text-[20px] text-on-primary-container">smart_toy</span><span>Ask Copilot</span></button></body></html>

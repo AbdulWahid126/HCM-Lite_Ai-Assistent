@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline-variant":"#bdc9c1","surface-tint":"#006c4e","on-tertiary-container":"#8fffcb","on-secondary":"#ffffff","primary":"#005d42","error":"#ba1a1a","primary-container":"#047857","secondary-container":"#6df5e1","surface-variant":"#dae2fd","inverse-surface":"#283044","surface-dim":"#d2d9f4","tertiary-container":"#007853","tertiary":"#005d3f","surface-bright":"#faf8ff","on-background":"#131b2e","surface-container-lowest":"#ffffff","tertiary-fixed-dim":"#68dba9","on-error":"#ffffff","secondary-fixed":"#71f8e4","background":"#faf8ff","on-tertiary":"#ffffff","tertiary-fixed":"#85f8c4","on-primary-fixed":"#002115","on-surface-variant":"#3e4943","on-tertiary-fixed-variant":"#005137","error-container":"#ffdad6","on-primary-fixed-variant":"#00513a","on-secondary-fixed-variant":"#005048","on-secondary-container":"#006f64","on-tertiary-fixed":"#002114","surface-container-low":"#f2f3ff","surface-container-high":"#e2e7ff","surface":"#faf8ff","inverse-on-surface":"#eef0ff","inverse-primary":"#7bd8b1","on-primary":"#ffffff","secondary":"#006b5f","on-secondary-fixed":"#00201c","surface-container-highest":"#dae2fd","on-error-container":"#93000a","primary-fixed":"#97f5cc","on-surface":"#131b2e","outline":"#6e7a73","on-primary-container":"#9ffdd3","secondary-fixed-dim":"#4fdbc8","surface-container":"#eaedff","primary-fixed-dim":"#7bd8b1"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-2xl":"2rem",gutter:"1rem","space-md":"0.75rem","space-sm":"0.5rem","space-xs":"0.25rem","space-xl":"1.5rem","space-lg":"1rem",margin:"1.5rem","margin-mobile":"1rem","gutter-mobile":"0.75rem"},fontFamily:{"headline-md":["Outfit"],"label-sm":["Hanken Grotesk"],"display-lg":["Outfit"],"body-semibold":["Hanken Grotesk"],"display-md":["Outfit"],"label-md":["Hanken Grotesk"],"metric-stat":["Outfit"],"headline-lg":["Outfit"],"body-lg":["Hanken Grotesk"],"body-md":["Hanken Grotesk"]},fontSize:{"headline-md":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"500"}],"display-lg":["30px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-semibold":["14px",{lineHeight:"20px",fontWeight:"600"}],"display-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"metric-stat":["28px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface-container-lowest border-b border-outline-variant/30 flex items-center justify-between px-6"><div class="flex items-center gap-3"><div class="flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">work</span></div><div class="flex items-center gap-2"><span class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">HCM Lite</span><span class="font-label-sm text-label-sm uppercase tracking-wider bg-primary-fixed/30 text-primary px-2 py-0.5 rounded-full border border-primary-fixed font-semibold">AI-ASSISTED HR</span></div></div><div class="flex items-center gap-4"><button class="flex items-center gap-1.5 bg-primary-container text-on-primary px-3.5 py-1.5 rounded-full font-label-md text-label-md font-semibold shadow-sm hover:bg-primary transition-all ring-2 ring-primary/20 cursor-pointer" type="button"><span class="material-symbols-outlined text-[16px] text-on-primary-container animate-pulse">auto_awesome</span><span>Ask AI</span></button><button aria-label="Notifications" class="relative p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 bg-error text-on-error rounded-full font-label-sm text-[10px] flex items-center justify-center font-bold leading-none">2</span></button><div class="h-6 w-px bg-outline-variant/40"></div><div class="flex items-center gap-3 pl-1"><div class="w-8 h-8 rounded-full bg-primary-fixed text-primary font-headline-md text-[13px] flex items-center justify-center font-bold ring-2 ring-primary/20">SA</div><div class="hidden sm:flex flex-col text-left"><div class="flex items-center gap-2"><span class="font-body-semibold text-body-semibold text-on-surface leading-tight">Sara Ahmed</span><span class="font-label-sm text-[10px] px-1.5 py-0.5 rounded-full bg-[#ecfdf5] text-[#047857] border border-[#a7f3d0] font-semibold uppercase tracking-wider">EMPLOYEE</span></div></div><button aria-label="User menu" class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" type="button"><span class="material-symbols-outlined text-[20px]">expand_more</span></button></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant/30 z-40 flex flex-col justify-between py-5 px-3 overflow-y-auto"><div class="flex flex-col gap-1"><div class="font-label-sm text-label-sm text-outline px-3 mb-2 uppercase tracking-wider font-semibold">EMPLOYEE SELF-SERVICE</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm rounded-xl ring-2 ring-primary/20"><a aria-current="page" class="flex items-center px-3 py-2.5 transition-all bg-primary-container text-on-primary font-semibold shadow-sm rounded-xl ring-2 ring-primary/20" data-path="dashboard" href="#"><span>Dashboard</span></a><a class="flex items-center px-3 py-2.5 rounded-xl font-body-semibold text-body-semibold text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="my-attendance-and-shifts" href="#"><span>My Attendance &amp; Shifts</span></a><a class="flex items-center px-3 py-2.5 rounded-xl font-body-semibold text-body-semibold text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="leave-applications" href="#"><span>Leave Applications</span></a><a class="flex items-center px-3 py-2.5 rounded-xl font-body-semibold text-body-semibold text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="payslips-and-tax" href="#"><span>Payslips &amp; Tax</span></a><a class="flex items-center px-3 py-2.5 rounded-xl font-body-semibold text-body-semibold text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="team-directory" href="#"><span>Team Directory</span></a><a class="flex items-center px-3 py-2.5 rounded-xl font-body-semibold text-body-semibold text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="performance-and-goals" href="#"><span>Performance &amp; Goals</span></a></nav></div><div class="mt-4 pt-4 border-t border-outline-variant/30"><div class="bg-surface-container-low border border-primary-fixed rounded-xl p-3.5"><div class="flex items-center gap-2 mb-1.5 text-primary"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span class="font-label-md text-label-md font-bold">AI Copilot Ready</span></div><p class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed">Instant leave predictions, policy Q&amp;A, and attendance regularizations.</p></div></div></aside><div class="pl-64"><main class="pt-16 min-h-screen bg-background"><div class="flex flex-col w-full">
+<div class="px-6 py-8 max-w-[1440px] mx-auto w-full flex flex-col gap-6">
+<!-- 1. Welcome & Policy Banner -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2 flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface flex items-center gap-2">
+            Good morning, Sara Ahmed! 
+            <span class="inline-block transform origin-bottom-right hover:rotate-12 transition-transform cursor-pointer">👋</span>
+</h1>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+            Lead Frontend Engineer
+          </span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md flex-wrap">
+<span class="flex items-center gap-1 text-on-surface font-body-semibold">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span>
+            Thursday, 24 October 2024
+          </span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-outline">schedule</span>
+            Shift: 09:00 - 18:00 PKT
+          </span>
+<span class="text-outline-variant">•</span>
+<div class="inline-flex items-center gap-1.5 bg-surface-container-high px-2.5 py-0.5 rounded-full text-on-surface-variant font-label-md text-label-md group relative cursor-help">
+<span class="material-symbols-outlined text-[15px] text-primary">info</span>
+<span>Office start: 09:00 AM (15m grace period until 09:15 AM)</span>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:flex flex-col items-center z-30 pointer-events-none">
+<span class="bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm px-3 py-1.5 rounded shadow-lg whitespace-nowrap">
+                Check-in past 09:15 AM counts toward monthly 3-late quota
+              </span>
+<span class="w-2 h-2 bg-inverse-surface rotate-45 -mt-1"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 shrink-0">
+<button class="flex items-center gap-1.5 bg-surface-container-lowest text-on-surface hover:bg-surface-container-low px-3.5 py-2 rounded-lg font-body-semibold text-body-semibold shadow-sm transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">history_toggle_off</span>
+<span>Request Regularization</span>
+</button>
+<button class="flex items-center gap-1.5 bg-primary text-on-primary hover:bg-primary-container px-4 py-2 rounded-lg font-body-semibold text-body-semibold shadow-sm transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-primary-container">auto_awesome</span>
+<span>Smart AI Assistant</span>
+</button>
+</div>
+</div>
+<!-- 2. Interactive Check-In / Check-Out Widget (Hero Card) -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-80 h-80 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row items-stretch justify-between gap-6">
+<!-- Left Side: Live State & Credentials -->
+<div class="flex flex-col justify-between gap-5 flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="flex items-baseline gap-2">
+<span class="font-metric-stat text-display-lg font-bold text-on-surface tracking-tight font-headline-md" id="live-clock">11:42:18 AM</span>
+<span class="font-label-md text-label-md text-outline">PKT</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Live Sync</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#ecfdf5] text-[#047857] font-label-md text-label-md font-semibold shadow-xs">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>PRESENT TODAY</span>
+</span>
+</div>
+</div>
+<!-- Working Elapsed Timer & Check-in Details -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="bg-surface-container-low rounded-xl p-3.5 flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">timer</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Working Time Today</div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold" id="elapsed-time">2h 48m 18s elapsed</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3.5 flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">login</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">First Gate Entry</div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold truncate">08:54 AM <span class="text-primary font-body-semibold text-body-md font-normal">• On Time (6m early)</span></div>
+</div>
+</div>
+</div>
+<!-- Geofence & Facial Verification Pills -->
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<div class="inline-flex items-center gap-1.5 bg-surface-container-high px-3 py-1.5 rounded-lg text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary">my_location</span>
+<span>Office Geofence: 24.8607° N, 67.0011° E • <strong class="text-primary font-semibold">In Range (14m from Main Entrance)</strong></span>
+</div>
+<div class="inline-flex items-center gap-1.5 bg-surface-container-high px-3 py-1.5 rounded-lg text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary">face_unlock</span>
+<span>Biometric Match: <strong class="text-primary font-semibold">99.4% Verified</strong></span>
+</div>
+</div>
+</div>
+<!-- Right Side: Controls & Shift Visual Timeline -->
+<div class="flex flex-col justify-between gap-5 xl:w-[420px] bg-surface-container-low p-4 rounded-xl">
+<div class="flex items-center justify-between gap-3">
+<div>
+<div class="font-label-sm text-label-sm text-outline uppercase font-semibold">Shift Progress</div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold">35% of 9h standard</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-body-semibold text-body-semibold shadow-xs flex items-center gap-1.5 transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">coffee</span>
+<span>Take Break</span>
+</button>
+<button class="px-4 py-2 rounded-lg bg-error hover:opacity-90 text-on-error font-body-semibold text-body-semibold shadow-sm flex items-center gap-1.5 transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+<span>Check Out</span>
+</button>
+</div>
+</div>
+<!-- Visual Daily Timeline -->
+<div class="flex flex-col gap-2 pt-2">
+<div class="relative w-full h-3 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 bg-primary rounded-full transition-all duration-500" style="width: 35%;"></div>
+<div class="absolute top-0 bottom-0 bg-secondary/50" style="left: 44.4%; width: 11.1%;" title="Lunch Break (13:00 - 14:00)"></div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant font-semibold">
+<div class="flex flex-col items-start">
+<span class="text-primary">Check-In</span>
+<span>08:54 AM</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="text-secondary">Lunch Window</span>
+<span>13:00 - 14:00</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-outline">Scheduled End</span>
+<span>18:00 (5h 12m rem.)</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">notifications_active</span>
+              Break reminder queued at 13:00 PKT
+            </span>
+<span class="text-primary font-body-semibold hover:underline cursor-pointer">Edit Shift Notes</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Top Summary Row (Weekly Hours & Payslip Snapshot) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Card A: Weekly Working Hours Progress (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col justify-between gap-5">
+<div class="flex items-start justify-between gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Weekly Hours Progress</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed/40 text-on-secondary-container font-semibold">Week 43</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Tracking against standard 40-hour engineering commitment</p>
+</div>
+<div class="text-right">
+<div class="font-metric-stat text-headline-lg font-bold text-primary">32.5 <span class="text-headline-md text-outline font-normal">/ 40.0 hrs</span></div>
+<div class="font-label-sm text-label-sm text-primary font-semibold">81% Completed</div>
+</div>
+</div>
+<!-- Progress Bar with Emerald Gradient -->
+<div class="flex flex-col gap-1.5">
+<div class="w-full bg-surface-container-high h-3 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary via-primary-container to-secondary h-full rounded-full transition-all duration-700" style="width: 81.25%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-primary font-semibold">7.5 hrs to standard weekly goal</span>
+<span>Target: Friday 18:00 PKT</span>
+</div>
+</div>
+<!-- Daily Breakdown Pills -->
+<div class="grid grid-cols-5 gap-2 pt-1 text-center">
+<div class="bg-surface-container-low p-2 rounded-lg">
+<div class="font-label-sm text-label-sm text-outline">Mon 21</div>
+<div class="font-body-semibold text-body-semibold text-on-surface mt-0.5">8.5h</div>
+<div class="font-label-sm text-[10px] text-primary font-semibold">Complete</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg">
+<div class="font-label-sm text-label-sm text-outline">Tue 22</div>
+<div class="font-body-semibold text-body-semibold text-on-surface mt-0.5">8.2h</div>
+<div class="font-label-sm text-[10px] text-primary font-semibold">Complete</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg">
+<div class="font-label-sm text-label-sm text-outline">Wed 23</div>
+<div class="font-body-semibold text-body-semibold text-on-surface mt-0.5">8.4h</div>
+<div class="font-label-sm text-[10px] text-primary font-semibold">Complete</div>
+</div>
+<div class="bg-primary/10 p-2 rounded-lg">
+<div class="font-label-sm text-label-sm text-primary font-bold">Today</div>
+<div class="font-body-semibold text-body-semibold text-primary mt-0.5">~2.8h</div>
+<div class="font-label-sm text-[10px] text-primary animate-pulse font-semibold">Active</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg opacity-80">
+<div class="font-label-sm text-label-sm text-outline">Fri 25</div>
+<div class="font-body-semibold text-body-semibold text-outline mt-0.5">--</div>
+<div class="font-label-sm text-[10px] text-outline">Planned</div>
+</div>
+</div>
+<!-- Late Arrivals Indicator -->
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">verified_user</span>
+            Attendance compliance within normal parameters
+          </span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-[#fffbeb] text-[#b45309] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+            Lates this month: 1 / 3 allowable
+          </span>
+</div>
+</div>
+<!-- Card B: Latest Payslip Snapshot (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col justify-between gap-5">
+<div class="flex items-start justify-between gap-3">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Payroll Snapshot</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold mt-0.5">October 2024 (Finalized)</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-[#ecfdf5] text-[#047857] font-semibold">
+            PROCESSED
+          </span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-4 flex flex-col gap-3">
+<div>
+<div class="font-label-sm text-label-sm text-outline">Net Take-Home Pay</div>
+<div class="font-display-lg text-display-lg font-bold text-primary tracking-tight">PKR 125,450</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">account_balance</span>
+              Credited on Oct 25 • Standard Bank Direct Deposit
+            </div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-md bg-surface-container-highest text-on-surface font-semibold">
+              Gross: PKR 139,650
+            </span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-md bg-[#fff1f2] text-[#be123c] font-semibold">
+              Tax Deducted: PKR 14,200
+            </span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-3 pt-1">
+<a class="w-full flex items-center justify-center gap-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-4 py-2.5 rounded-lg font-body-semibold text-body-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-[18px] text-primary">picture_as_pdf</span>
+<span>View &amp; Download Payslip (PDF)</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 4. Leave Balance Quota Cards with SVG Progress Rings -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between flex-wrap gap-3">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Leave Balances &amp; Quotas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Annual statutory allowances for calendar year 2024</p>
+</div>
+<div class="flex items-center gap-2.5">
+<button class="flex items-center gap-1.5 bg-surface-container-lowest text-on-surface hover:bg-surface-container-low px-3.5 py-2 rounded-lg font-body-semibold text-body-semibold shadow-sm transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">auto_fix_high</span>
+<span>Smart AI Leave Request</span>
+</button>
+<button class="flex items-center gap-1.5 bg-primary text-on-primary hover:bg-primary-container px-4 py-2 rounded-lg font-body-semibold text-body-semibold shadow-sm transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Apply for Leave</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Annual Leave -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex items-center justify-between gap-4">
+<div class="flex flex-col justify-between h-full gap-3">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Vacation Quota</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Annual Leave</h3>
+</div>
+<div>
+<div class="font-display-md text-display-md font-bold text-on-surface">11 <span class="font-body-md text-body-md text-outline font-normal">/ 14 days left</span></div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">3 days consumed this year</p>
+</div>
+<div class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+              Accrual rate: 1.16 days/mo
+            </div>
+</div>
+<!-- SVG Ring 78% -->
+<div class="relative w-24 h-24 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3.5"></path>
+<path class="text-primary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="78, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">78%</span>
+<span class="font-label-sm text-[9px] uppercase text-outline font-semibold">Avail</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Sick / Medical Leave -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex items-center justify-between gap-4">
+<div class="flex flex-col justify-between h-full gap-3">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Health &amp; Wellness</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Sick / Medical</h3>
+</div>
+<div>
+<div class="font-display-md text-display-md font-bold text-on-surface">7 <span class="font-body-md text-body-md text-outline font-normal">/ 8 days left</span></div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">1 day consumed this year</p>
+</div>
+<div class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_hospital</span>
+              Cert. required &gt; 2 days
+            </div>
+</div>
+<!-- SVG Ring 87% -->
+<div class="relative w-24 h-24 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3.5"></path>
+<path class="text-secondary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="87.5, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">88%</span>
+<span class="font-label-sm text-[9px] uppercase text-outline font-semibold">Avail</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Casual Leave -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex items-center justify-between gap-4">
+<div class="flex flex-col justify-between h-full gap-3">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Short Absence</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Casual Leave</h3>
+</div>
+<div>
+<div class="font-display-md text-display-md font-bold text-on-surface">9 <span class="font-body-md text-body-md text-outline font-normal">/ 10 days left</span></div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">1 day consumed this year</p>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event_busy</span>
+              Max 3 consecutive days
+            </div>
+</div>
+<!-- SVG Ring 90% -->
+<div class="relative w-24 h-24 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3.5"></path>
+<path class="text-tertiary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="90, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">90%</span>
+<span class="font-label-sm text-[9px] uppercase text-outline font-semibold">Avail</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Two-Column Lower Section: Recent Attendance & Notice Board -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- Left Column: Recent Attendance History (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-sm p-5 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Recent Attendance (This Week)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Gate logs and verified geofence clock entries</p>
+</div>
+<a class="font-label-md text-label-md text-primary font-semibold hover:underline flex items-center gap-1" href="#">
+<span>Full History</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="overflow-x-auto -mx-5 px-5">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-outline font-label-md text-label-md uppercase tracking-wider">
+<th class="py-2.5 px-3 rounded-l-lg font-semibold">Date</th>
+<th class="py-2.5 px-3 font-semibold">In / Out</th>
+<th class="py-2.5 px-3 font-semibold">Duration</th>
+<th class="py-2.5 px-3 font-semibold">Status</th>
+<th class="py-2.5 px-3 rounded-r-lg font-semibold">Verification</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y divide-surface-container-low">
+<!-- Today -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-3">
+<div class="font-body-semibold text-body-semibold text-on-surface">Today, Oct 24</div>
+<div class="font-label-sm text-label-sm text-outline">Shift 1 (Standard)</div>
+</td>
+<td class="py-3 px-3">
+<div class="font-body-semibold text-on-surface">08:54 AM</div>
+<div class="font-label-sm text-label-sm text-primary font-semibold">In Progress</div>
+</td>
+<td class="py-3 px-3 font-body-semibold text-primary">
+                  2h 48m
+                </td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-[#ecfdf5] text-[#047857] font-semibold">
+                    Present
+                  </span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+                    Geofenced (HQ)
+                  </span>
+</td>
+</tr>
+<!-- Wed Oct 23 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-3">
+<div class="font-body-semibold text-body-semibold text-on-surface">Wed, Oct 23</div>
+<div class="font-label-sm text-label-sm text-outline">Regular Shift</div>
+</td>
+<td class="py-3 px-3">
+<div class="text-on-surface">09:02 AM</div>
+<div class="font-label-sm text-label-sm text-outline">18:14 PM</div>
+</td>
+<td class="py-3 px-3 font-body-semibold text-on-surface">
+                  8h 24m
+                </td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-[#ecfdf5] text-[#047857] font-semibold">
+                    On-Time
+                  </span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+                    Biometric + Geo
+                  </span>
+</td>
+</tr>
+<!-- Tue Oct 22 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-3">
+<div class="font-body-semibold text-body-semibold text-on-surface">Tue, Oct 22</div>
+<div class="font-label-sm text-label-sm text-outline">Regular Shift</div>
+</td>
+<td class="py-3 px-3">
+<div class="text-on-surface">09:22 AM</div>
+<div class="font-label-sm text-label-sm text-outline">18:35 PM</div>
+</td>
+<td class="py-3 px-3 font-body-semibold text-on-surface">
+                  8h 13m
+                </td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-[#fffbeb] text-[#b45309] font-semibold">
+                    Late (Grace +7m)
+                  </span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+                    Geofenced (HQ)
+                  </span>
+</td>
+</tr>
+<!-- Mon Oct 21 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-3">
+<div class="font-body-semibold text-body-semibold text-on-surface">Mon, Oct 21</div>
+<div class="font-label-sm text-label-sm text-outline">Regular Shift</div>
+</td>
+<td class="py-3 px-3">
+<div class="text-on-surface">08:58 AM</div>
+<div class="font-label-sm text-label-sm text-outline">18:02 PM</div>
+</td>
+<td class="py-3 px-3 font-body-semibold text-on-surface">
+                  8h 31m
+                </td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-[#ecfdf5] text-[#047857] font-semibold">
+                    On-Time
+                  </span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+                    Biometric + Geo
+                  </span>
+</td>
+</tr>
+<!-- Fri Oct 18 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-3">
+<div class="font-body-semibold text-body-semibold text-on-surface">Fri, Oct 18</div>
+<div class="font-label-sm text-label-sm text-outline">Approved Remote</div>
+</td>
+<td class="py-3 px-3">
+<div class="text-on-surface">09:00 AM</div>
+<div class="font-label-sm text-label-sm text-outline">17:45 PM</div>
+</td>
+<td class="py-3 px-3 font-body-semibold text-on-surface">
+                  8h 15m
+                </td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-[#eff6ff] text-[#1d4ed8] font-semibold">
+                    WFH / Remote
+                  </span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[15px]">home_pin</span>
+                    Home IP Verified
+                  </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Right Column: Company Announcements & Notice Board (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl shadow-sm p-5 flex flex-col justify-between gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">campaign</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Company Announcements</h3>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-semibold">3 New</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Notice 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all flex flex-col gap-2 cursor-pointer">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded-full bg-[#fff1f2] text-[#be123c] font-bold uppercase tracking-wider">
+                Urgent Action
+              </span>
+<span class="font-label-sm text-label-sm text-outline">Oct 22, 2024</span>
+</div>
+<h4 class="font-body-semibold text-body-semibold text-on-surface leading-snug">
+              Annual Health Insurance Open Enrollment ends Oct 31
+            </h4>
+<p class="font-body-md text-label-md text-on-surface-variant line-clamp-2">
+              Please submit dependent declarations and plan tier modifications in the HR Benefits portal before the cut-off date.
+            </p>
+</div>
+<!-- Notice 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all flex flex-col gap-2 cursor-pointer">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded-full bg-[#fffbeb] text-[#b45309] font-bold uppercase tracking-wider">
+                High Priority
+              </span>
+<span class="font-label-sm text-label-sm text-outline">Oct 20, 2024</span>
+</div>
+<h4 class="font-body-semibold text-body-semibold text-on-surface leading-snug">
+              Upcoming Townhall with Executive Leadership • Friday 4:00 PM
+            </h4>
+<p class="font-body-md text-label-md text-on-surface-variant line-clamp-2">
+              Join live in Main Auditorium or via Google Meet. Q3 financial performance recap and product roadmap unveil.
+            </p>
+</div>
+<!-- Notice 3 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all flex flex-col gap-2 cursor-pointer">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded-full bg-[#eff6ff] text-[#1d4ed8] font-bold uppercase tracking-wider">
+                Normal
+              </span>
+<span class="font-label-sm text-label-sm text-outline">Oct 18, 2024</span>
+</div>
+<h4 class="font-body-semibold text-body-semibold text-on-surface leading-snug">
+              Lahore HQ Cafeteria New Menu &amp; Subsidized Meal Program
+            </h4>
+<p class="font-body-md text-label-md text-on-surface-variant line-clamp-2">
+              Healthy lunch bowls and freshly roasted coffee cards are now integrated directly via employee RFID badge scans.
+            </p>
+</div>
+</div>
+<div class="pt-2 border-t border-surface-container-low flex items-center justify-between">
+<a class="font-label-md text-label-md text-primary font-semibold hover:underline flex items-center gap-1" href="#">
+<span>View All Company Notices</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+<span class="font-label-sm text-label-sm text-outline">Updated 2h ago</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic clock ticking simulation
+  (function initDashboardClock() {
+    const clockEl = document.getElementById('live-clock');
+    const elapsedEl = document.getElementById('elapsed-time');
+    let startSeconds = (2 * 3600) + (48 * 60) + 18;
+
+    function formatTime(date) {
+      return date.toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+      });
+    }
+
+    function formatElapsed(sec) {
+      const h = Math.floor(sec / 3600);
+      const m = Math.floor((sec % 3600) / 60);
+      const s = sec % 60;
+      return `${h}h ${m}m ${s}s elapsed`;
+    }
+
+    setInterval(() => {
+      startSeconds++;
+      if (clockEl) {
+        const now = new Date();
+        clockEl.textContent = formatTime(now);
+      }
+      if (elapsedEl) {
+        elapsedEl.textContent = formatElapsed(startSeconds);
+      }
+    }, 1000);
+  })();
+</script></main></div><button aria-label="Open AI Copilot" class="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary px-4 py-3 rounded-full shadow-lg ring-4 ring-primary/10 transition-all font-body-semibold text-body-semibold cursor-pointer" type="button"><span class="material-symbols-outlined text-[20px] text-on-primary-container">smart_toy</span><span>Ask AI</span></button></body></html>

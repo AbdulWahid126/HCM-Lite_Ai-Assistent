@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-primary-fixed":"#002115","primary":"#005d42","primary-container":"#047857","secondary-fixed":"#71f8e4","surface-container-low":"#f2f3ff","on-primary":"#ffffff","on-surface-variant":"#3e4943","on-secondary-fixed-variant":"#005048","inverse-surface":"#283044","secondary":"#006b5f","secondary-fixed-dim":"#4fdbc8","on-surface":"#131b2e","on-tertiary-fixed-variant":"#005137","surface-bright":"#faf8ff","inverse-on-surface":"#eef0ff","surface-variant":"#dae2fd","surface-container-highest":"#dae2fd","surface-container-lowest":"#ffffff","outline-variant":"#bdc9c1","on-secondary-fixed":"#00201c","surface-dim":"#d2d9f4","on-background":"#131b2e","on-error-container":"#93000a","on-tertiary-fixed":"#002114","surface-container-high":"#e2e7ff","tertiary-fixed":"#85f8c4","on-error":"#ffffff","on-primary-fixed-variant":"#00513a","on-tertiary-container":"#8fffcb","inverse-primary":"#7bd8b1","error":"#ba1a1a","on-tertiary":"#ffffff","tertiary":"#005d3f","background":"#faf8ff","primary-fixed":"#97f5cc","on-primary-container":"#9ffdd3","tertiary-container":"#007853","surface-container":"#eaedff","primary-fixed-dim":"#7bd8b1","surface":"#faf8ff","outline":"#6e7a73","on-secondary":"#ffffff","secondary-container":"#6df5e1","tertiary-fixed-dim":"#68dba9","error-container":"#ffdad6","surface-tint":"#006c4e","on-secondary-container":"#006f64"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1rem","space-2xl":"2rem","margin":"1.5rem","margin-mobile":"1rem","space-md":"0.75rem","space-sm":"0.5rem","gutter":"1rem","gutter-mobile":"0.75rem","space-xl":"1.5rem","space-xs":"0.25rem"},"fontFamily":{"label-md":["Hanken Grotesk"],"headline-md":["Outfit"],"label-sm":["Hanken Grotesk"],"metric-stat":["Outfit"],"headline-lg":["Outfit"],"display-lg":["Outfit"],"body-lg":["Hanken Grotesk"],"body-md":["Hanken Grotesk"],"body-semibold":["Hanken Grotesk"],"display-md":["Outfit"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"metric-stat":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["30px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-semibold":["14px",{"lineHeight":"20px","fontWeight":"600"}],"display-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-xl"><div class="flex items-center gap-space-md px-space-xl"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[22px]">corporate_fare</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-on-surface tracking-tight">HCM Lite</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Enterprise</span></div></div><div class="px-space-md"><div class="px-space-md mb-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline">Workforce Suite</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-body-semibold"><a class="flex items-center px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#">Dashboard</a><a class="flex items-center px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="attendance-board" href="#">Attendance Board</a><a class="flex items-center px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="employee-directory" href="#">Employee Directory</a><a class="flex items-center px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="hr-leave-approval-inbox-coverage-board" href="#">Leave Approvals</a><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container font-body-semibold" data-path="monthly-payroll-processing" href="#">Payroll &amp; Tax</a></nav></div></div><div class="px-space-md flex flex-col gap-space-sm"><div class="px-space-md mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline">Administration</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-body-semibold"><a class="flex items-center px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="organization-settings" href="#">Organization Settings</a></nav><div class="mt-space-md px-space-md py-space-sm rounded-lg bg-surface-container flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline">Tenant Region</span><span class="font-body-semibold text-body-semibold text-on-surface">US-East (Prod)</span></div><span class="w-2 h-2 rounded-full bg-primary-container"></span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full h-9 pl-9 pr-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search employees, leaves, payroll..." type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs bg-surface-container-high px-space-sm py-1 rounded-full"><button class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface shadow-sm" type="button">HR Manager</button><button class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Admin</button></div><button aria-label="Notifications" class="relative w-9 h-9 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary"></span></button><div class="flex items-center gap-space-md pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:flex flex-col text-left"><span class="font-body-semibold text-body-semibold text-on-surface leading-tight">Morgan Vance</span><span class="font-label-sm text-label-sm text-outline">morgan.vance@hcmlite.io</span></div></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive State Engine Script -->
+<script>
+    function switchCycle(cycle) {
+      const activeEl = document.getElementById('selected-cycle-label');
+      if (activeEl) activeEl.innerText = cycle;
+    }
+
+    function toggleViewRole(role) {
+      const btnFinalize = document.getElementById('btn-finalize-lock');
+      const roleBadge = document.getElementById('view-role-badge');
+      const hrWarning = document.getElementById('hr-warning-pill');
+
+      if (role === 'hr') {
+        btnFinalize.disabled = true;
+        btnFinalize.classList.add('opacity-45', 'cursor-not-allowed', 'pointer-events-none');
+        roleBadge.innerText = 'Active View: HR Manager (Read / Draft Only)';
+        roleBadge.className = 'px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant flex items-center gap-1 shadow-sm';
+        hrWarning.classList.remove('hidden');
+      } else {
+        btnFinalize.disabled = false;
+        btnFinalize.classList.remove('opacity-45', 'cursor-not-allowed', 'pointer-events-none');
+        roleBadge.innerText = 'Active View: Administrator (Full Write & Lock)';
+        roleBadge.className = 'px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-fixed/50 text-on-secondary-fixed flex items-center gap-1 shadow-sm';
+        hrWarning.classList.add('hidden');
+      }
+    }
+
+    function filterDepartment(dept) {
+      const rows = document.querySelectorAll('tr[data-dept]');
+      rows.forEach(row => {
+        if (dept === 'All' || row.getAttribute('data-dept') === dept) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+      // Visual tab button updates
+      document.querySelectorAll('.dept-pill').forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      });
+      const activeBtn = document.getElementById('dept-' + dept.toLowerCase().replace(/[^a-z]/g, ''));
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        activeBtn.classList.add('bg-primary', 'text-on-primary');
+      }
+    }
+
+    function filterStatus(type) {
+      const rows = document.querySelectorAll('tr[data-status-type]');
+      rows.forEach(row => {
+        if (type === 'all' || row.getAttribute('data-status-type') === type) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+      document.querySelectorAll('.anomaly-pill').forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-body-semibold');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      const target = document.getElementById('anomaly-' + type);
+      if (target) {
+        target.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        target.classList.add('bg-primary-container', 'text-on-primary-container', 'font-body-semibold');
+      }
+    }
+
+    function searchTable(query) {
+      const q = query.toLowerCase().trim();
+      const rows = document.querySelectorAll('tbody tr[data-dept]');
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        row.style.display = text.includes(q) ? '' : 'none';
+      });
+    }
+
+    function openDraftModal() {
+      const m = document.getElementById('draft-modal');
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+    }
+    function closeDraftModal() {
+      const m = document.getElementById('draft-modal');
+      m.classList.add('hidden');
+      m.classList.remove('flex');
+    }
+  </script>
+<!-- Canvas Padding Container -->
+<div class="px-margin py-space-xl flex flex-col gap-space-xl max-w-[1720px] mx-auto w-full">
+<!-- 1. Top Header & Meta Controls -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="hover:text-primary cursor-pointer transition-colors">Workforce Suite</span>
+<span class="material-symbols-outlined text-[13px] text-outline">chevron_right</span>
+<span class="hover:text-primary cursor-pointer transition-colors">Payroll &amp; Tax</span>
+<span class="material-symbols-outlined text-[13px] text-outline">chevron_right</span>
+<span class="text-primary font-body-semibold">Monthly Processing</span>
+</nav>
+<div class="flex items-baseline gap-space-md flex-wrap">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">
+            Monthly Payroll Processing &amp; Disbursement
+          </h1>
+<!-- Interactive Role Switcher Toggle for Demo/Testing -->
+<div class="flex items-center bg-surface-container p-0.5 rounded-full shadow-inner">
+<button class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm transition-all focus:outline-none hover:text-on-surface text-on-surface font-body-semibold" onclick="toggleViewRole('admin')" title="Simulate Administrator Access">
+              Admin
+            </button>
+<button class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all focus:outline-none" onclick="toggleViewRole('hr')" title="Simulate HR Access">
+              HR Manager
+            </button>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Compute automated statutory deductions, attendance penalties, progressive income tax, and execute final administrative lock.
+        </p>
+</div>
+<!-- Action Cluster -->
+<div class="flex flex-wrap items-center gap-space-md">
+<!-- Cycle Picker -->
+<div class="relative group">
+<button class="h-9 px-space-md bg-surface-container-lowest rounded-lg shadow-sm flex items-center gap-space-sm text-on-surface font-body-semibold text-body-semibold hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-primary text-[18px]">calendar_month</span>
+<span id="selected-cycle-label">October 2026 (Active Cycle)</span>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</button>
+<!-- Dropdown -->
+<div class="absolute right-0 mt-1 w-64 bg-surface-container-lowest rounded-xl shadow-xl hidden group-hover:block group-focus-within:block z-50 p-space-xs">
+<button class="w-full text-left px-space-md py-space-sm rounded-lg hover:bg-surface-container-high flex items-center justify-between font-body-md text-body-md text-on-surface" onclick="switchCycle('October 2026 (Active Cycle)')">
+<span>October 2026</span>
+<span class="px-space-xs py-0.5 rounded font-label-sm text-label-sm bg-primary-container/20 text-primary font-body-semibold">Active</span>
+</button>
+<button class="w-full text-left px-space-md py-space-sm rounded-lg hover:bg-surface-container-high flex items-center justify-between font-body-md text-body-md text-on-surface-variant" onclick="switchCycle('September 2026 (Finalized)')">
+<span>September 2026</span>
+<span class="px-space-xs py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant">Locked</span>
+</button>
+<button class="w-full text-left px-space-md py-space-sm rounded-lg hover:bg-surface-container-high flex items-center justify-between font-body-md text-body-md text-on-surface-variant" onclick="switchCycle('November 2026 (Forecast)')">
+<span>November 2026</span>
+<span class="px-space-xs py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant">Draft</span>
+</button>
+</div>
+</div>
+<!-- Secondary Button: Draft Run -->
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-semibold text-body-semibold shadow-sm hover:bg-surface-container transition-colors flex items-center gap-space-xs" onclick="openDraftModal()" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">sync</span>
+<span>Generate Payroll Draft</span>
+</button>
+<!-- Secondary Button: Bank Advice CSV -->
+<a class="h-9 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-semibold text-body-semibold shadow-sm hover:bg-surface-container transition-colors flex items-center gap-space-xs" href="#bank-export">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+<span>Export Bank Advice (.csv)</span>
+</a>
+<!-- Finalize Lock (ADMIN ONLY) -->
+<div class="flex items-center gap-space-xs">
+<button class="h-9 px-space-md rounded-lg bg-primary-container text-on-primary-container font-body-semibold text-body-semibold shadow-md hover:bg-primary transition-all flex items-center gap-space-sm" id="btn-finalize-lock" type="button">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Finalize &amp; Lock Payroll</span>
+<span class="px-1.5 py-0.5 rounded bg-on-primary-container/20 text-on-primary-fixed text-[10px] uppercase font-bold tracking-wider">ADMIN ONLY</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Active View Role Pill & Operational Status Header Bar -->
+<div class="flex items-center justify-between gap-space-md flex-wrap">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-fixed/50 text-on-secondary-fixed flex items-center gap-1 shadow-sm" id="view-role-badge">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+          Active View: Administrator (Full Write &amp; Lock)
+        </span>
+<span class="hidden px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container flex items-center gap-1" id="hr-warning-pill">
+<span class="material-symbols-outlined text-[14px]">lock_clock</span>
+          Only Administrator can finalize payroll lock
+        </span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          State: Fully Reconciled &amp; Audited
+        </span>
+<span>•</span>
+<span>Cycle Ref: <code class="font-mono text-on-surface">PAY-2026-10-OCT</code></span>
+</div>
+</div>
+<!-- 2. Dynamic Status Banner -->
+<div class="w-full bg-gradient-to-r from-primary-container via-primary to-primary text-on-primary rounded-xl p-space-lg shadow-md flex flex-col md:flex-row md:items-center justify-between gap-space-lg relative overflow-hidden">
+<!-- Background subtle ornament -->
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-on-primary/5 pointer-events-none"></div>
+<div class="flex items-start md:items-center gap-space-md z-10">
+<div class="w-12 h-12 rounded-xl bg-on-primary/15 backdrop-blur-md flex items-center justify-center text-on-primary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">shield_lock</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-md text-headline-md tracking-tight font-bold text-on-primary">
+              Payroll Finalized &amp; Locked by Admin on 24 Oct 2026
+            </span>
+<span class="px-space-xs py-0.5 rounded bg-on-primary/20 font-label-sm text-label-sm font-semibold tracking-wider uppercase text-on-primary">
+              Immutable Run ID: PAY-2026-10-OCT
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-primary/85">
+            48 / 48 payslips published to Employee Self-Service portal. Direct bank deposit batch dispatched via Habib Bank (HBL) automated corporate clearing house.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 z-10">
+<a class="h-8 px-space-md rounded-lg bg-on-primary text-primary font-body-semibold text-body-semibold shadow hover:bg-surface-container-lowest transition-colors flex items-center gap-1" href="#audit-trail">
+<span class="material-symbols-outlined text-[16px]">history_edu</span>
+          View Audit Signature
+        </a>
+</div>
+</div>
+<!-- 3. KPI Metrics Horizontal Grid (5 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Total Paid</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<span class="font-metric-stat text-metric-stat text-on-surface">48 Staff</span>
+<div class="mt-space-xs flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+2 from Sep 2026 (100% active)</span>
+</div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Total Gross Payroll</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<span class="font-metric-stat text-metric-stat text-on-surface">PKR 7,200,000</span>
+<span class="mt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+            Base + HRA (40%) + Med (10%)
+          </span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Attendance Penalties</span>
+<div class="w-8 h-8 rounded-lg bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">timer_off</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<span class="font-metric-stat text-metric-stat text-on-surface">PKR 142,500</span>
+<div class="mt-space-xs inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-error-container/60 text-error font-label-sm text-label-sm w-fit">
+<span class="material-symbols-outlined text-[12px]">schedule</span>
+<span>21.5 penalty days total</span>
+</div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Tax Withheld (FBR)</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<span class="font-metric-stat text-metric-stat text-on-surface">PKR 284,000</span>
+<div class="mt-space-xs inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-primary-fixed-dim/30 text-primary font-label-sm text-label-sm w-fit">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+<span>Progressive Tier 2026</span>
+</div>
+</div>
+</div>
+<!-- KPI 5 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Net Disbursement</span>
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<span class="font-metric-stat text-metric-stat text-primary font-bold">PKR 6,773,500</span>
+<div class="mt-space-xs inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-body-semibold">
+<span class="material-symbols-outlined text-[14px]">account_balance_wallet</span>
+<span>Disbursed via Habib Bank (HBL)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Filter & Search Toolbar for Payroll Roster -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1 max-w-lg">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full h-9 pl-9 pr-space-md rounded-lg bg-surface-container text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" onkeyup="searchTable(this.value)" placeholder="Search by employee code, name, designation..." type="text"/>
+</div>
+<!-- Quick Action Batch Payslips -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-9 px-space-md rounded-lg bg-surface-container text-on-surface font-body-semibold text-body-semibold hover:bg-surface-container-high transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">folder_zip</span>
+<span>Batch Download All Payslips (.ZIP)</span>
+</button>
+</div>
+</div>
+<!-- Department Filter Pills -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mr-1">Department:</span>
+<button class="dept-pill px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-primary text-on-primary transition-all" id="dept-all" onclick="filterDepartment('All')">
+          All Departments (48)
+        </button>
+<button class="dept-pill px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" id="dept-engineering" onclick="filterDepartment('Engineering')">
+          Engineering (22)
+        </button>
+<button class="dept-pill px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" id="dept-productdesign" onclick="filterDepartment('Product &amp; Design')">
+          Product &amp; Design (8)
+        </button>
+<button class="dept-pill px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" id="dept-peopleops" onclick="filterDepartment('People Ops')">
+          People Ops (6)
+        </button>
+<button class="dept-pill px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" id="dept-financetax" onclick="filterDepartment('Finance &amp; Tax')">
+          Finance &amp; Tax (12)
+        </button>
+</div>
+<!-- Anomaly / Specific Deduction Filters -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mr-1">Record Status:</span>
+<button class="anomaly-pill px-space-sm py-0.5 rounded-md font-label-sm text-label-sm bg-primary-container text-on-primary-container font-body-semibold transition-all" id="anomaly-all" onclick="filterStatus('all')">
+          All Records (48)
+        </button>
+<button class="anomaly-pill px-space-sm py-0.5 rounded-md font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-all" id="anomaly-clean" onclick="filterStatus('clean')">
+          Clean (39)
+        </button>
+<button class="anomaly-pill px-space-sm py-0.5 rounded-md font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-all" id="anomaly-deductions" onclick="filterStatus('attendance-deduction')">
+          With Attendance Deductions (7)
+        </button>
+<button class="anomaly-pill px-space-sm py-0.5 rounded-md font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-all" id="anomaly-unpaid" onclick="filterStatus('unpaid-leave')">
+          Unpaid Leave Deductions (2)
+        </button>
+</div>
+</div>
+<!-- 5. Employee Payroll Breakdown Data Table (High-Fidelity) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-wider h-11">
+<th class="px-space-md py-space-sm min-w-[200px]">Employee &amp; ID</th>
+<th class="px-space-md py-space-sm min-w-[160px]">Dept &amp; Role</th>
+<th class="px-space-md py-space-sm min-w-[210px]">Salary Structure (PKR)</th>
+<th class="px-space-md py-space-sm min-w-[120px] text-right">Gross Total</th>
+<th class="px-space-md py-space-sm min-w-[170px]">Attendance (22d)</th>
+<th class="px-space-md py-space-sm min-w-[180px]">Deductions &amp; Tax</th>
+<th class="px-space-md py-space-sm min-w-[140px] text-right">Net Payable</th>
+<th class="px-space-md py-space-sm min-w-[130px] text-center">Status &amp; Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-md text-body-md text-on-surface">
+<!-- ROW 1: Sara Ahmed (EMP-002) - Highlighted Standard Record -->
+<tr class="hover:bg-surface-container-low transition-colors bg-primary-fixed/5" data-dept="Engineering" data-status-type="clean">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary text-on-primary font-body-semibold flex items-center justify-center shrink-0">
+                    SA
+                  </div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface flex items-center gap-1">
+                      Sara Ahmed
+                      <span class="material-symbols-outlined text-primary text-[14px]" title="Reconciled &amp; Verified">verified</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">EMP-002</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Senior Frontend Eng</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Engineering</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col font-mono text-[12px] leading-relaxed text-on-surface-variant">
+<div class="flex justify-between"><span>Base:</span> <span class="text-on-surface font-semibold">93,100</span></div>
+<div class="flex justify-between"><span>HRA (40%):</span> <span>37,240</span></div>
+<div class="flex justify-between"><span>Med (10%):</span> <span>9,310</span></div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<span class="font-body-semibold text-body-semibold text-on-surface font-mono">PKR 139,650</span>
+<span class="block text-[11px] text-outline">1.50× Base</span>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col text-[12px]">
+<span class="text-primary font-body-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    22 / 22 Working Days
+                  </span>
+<span class="text-outline text-[11px]">0 Late • 0 Absences</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col font-mono text-[12px] leading-relaxed">
+<div class="flex justify-between text-outline">
+<span>Att. Pen:</span>
+<span>PKR 0</span>
+</div>
+<div class="flex justify-between text-error font-medium">
+<span>FBR Tax:</span>
+<span>-PKR 14,200</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<span class="font-headline-md text-headline-md font-bold text-primary block">PKR 125,450</span>
+<span class="text-[11px] text-outline">HBL Direct #••9104</span>
+</td>
+<td class="px-space-md py-space-md text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="px-space-xs py-0.5 rounded-full font-label-sm text-label-sm bg-primary-container/20 text-primary font-semibold">
+                    Paid
+                  </span>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-0.5" href="#view-payslip">
+                    View Payslip
+                    <span class="material-symbols-outlined text-[12px]">arrow_forward</span>
+</a>
+</div>
+</td>
+</tr>
+<!-- ROW 2: Tariq Vance (EMP-001) - Clean VP Record -->
+<tr class="hover:bg-surface-container-low transition-colors" data-dept="Engineering" data-status-type="clean">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant font-body-semibold flex items-center justify-center shrink-0">
+                    TV
+                  </div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Tariq Vance</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">EMP-001</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">VP of Engineering</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Engineering</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col font-mono text-[12px] leading-relaxed text-on-surface-variant">
+<div class="flex justify-between"><span>Base:</span> <span class="text-on-surface font-semibold">220,000</span></div>
+<div class="flex justify-between"><span>HRA (40%):</span> <span>88,000</span></div>
+<div class="flex justify-between"><span>Med (10%):</span> <span>22,000</span></div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<span class="font-body-semibold text-body-semibold text-on-surface font-mono">PKR 330,000</span>
+<span class="block text-[11px] text-outline">1.50× Base</span>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col text-[12px]">
+<span class="text-primary font-body-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    22 / 22 Working Days
+                  </span>
+<span class="text-outline text-[11px]">Clean Record</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col font-mono text-[12px] leading-relaxed">
+<div class="flex justify-between text-outline">
+<span>Att. Pen:</span>
+<span>PKR 0</span>
+</div>
+<div class="flex justify-between text-error font-medium">
+<span>FBR Tax:</span>
+<span>-PKR 48,500</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<span class="font-headline-md text-headline-md font-bold text-primary block">PKR 281,500</span>
+<span class="text-[11px] text-outline">HBL Direct #••4811</span>
+</td>
+<td class="px-space-md py-space-md text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="px-space-xs py-0.5 rounded-full font-label-sm text-label-sm bg-primary-container/20 text-primary font-semibold">
+                    Paid
+                  </span>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-0.5" href="#view-payslip">
+                    View Payslip
+                    <span class="material-symbols-outlined text-[12px]">arrow_forward</span>
+</a>
+</div>
+</td>
+</tr>
+<!-- ROW 3: Hamza Rehman (EMP-005) - Attendance Deduction (Half Day) -->
+<tr class="hover:bg-surface-container-low transition-colors bg-error-container/5" data-dept="Product &amp; Design" data-status-type="attendance-deduction">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant font-body-semibold flex items-center justify-center shrink-0">
+                    HR
+                  </div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Hamza Rehman</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">EMP-005</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">UI/UX Designer</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Product &amp; Design</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col font-mono text-[12px] leading-relaxed text-on-surface-variant">
+<div class="flex justify-between"><span>Base:</span> <span class="text-on-surface font-semibold">63,333</span></div>
+<div class="flex justify-between"><span>HRA (40%):</span> <span>25,333</span></div>
+<div class="flex justify-between"><span>Med (10%):</span> <span>6,334</span></div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<span class="font-body-semibold text-body-semibold text-on-surface font-mono">PKR 95,000</span>
+<span class="block text-[11px] text-outline">1.50× Base</span>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col text-[12px]">
+<span class="text-error font-body-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                    21.5 d (1 Half-Day)
+                  </span>
+<span class="text-outline text-[11px]">Unexcused late arrival</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col font-mono text-[12px] leading-relaxed">
+<div class="flex justify-between text-error font-medium">
+<span>Half-Day Pen:</span>
+<span>-PKR 2,159</span>
+</div>
+<div class="flex justify-between text-error font-medium">
+<span>FBR Tax:</span>
+<span>-PKR 4,800</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<span class="font-headline-md text-headline-md font-bold text-primary block">PKR 88,041</span>
+<span class="text-[11px] text-outline">HBL Direct #••1288</span>
+</td>
+<td class="px-space-md py-space-md text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="px-space-xs py-0.5 rounded-full font-label-sm text-label-sm bg-primary-container/20 text-primary font-semibold">
+                    Paid
+                  </span>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-0.5" href="#view-payslip">
+                    View Payslip
+                    <span class="material-symbols-outlined text-[12px]">arrow_forward</span>
+</a>
+</div>
+</td>
+</tr>
+<!-- ROW 4: Bilal Tariq (EMP-003) - Unpaid Leave Deduction (LWP) -->
+<tr class="hover:bg-surface-container-low transition-colors bg-error-container/5" data-dept="People Ops" data-status-type="unpaid-leave">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant font-body-semibold flex items-center justify-center shrink-0">
+                    BT
+                  </div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Bilal Tariq</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">EMP-003</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">People Partner</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">People Ops</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col font-mono text-[12px] leading-relaxed text-on-surface-variant">
+<div class="flex justify-between"><span>Base:</span> <span class="text-on-surface font-semibold">65,000</span></div>
+<div class="flex justify-between"><span>HRA (40%):</span> <span>26,000</span></div>
+<div class="flex justify-between"><span>Med (10%):</span> <span>6,500</span></div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<span class="font-body-semibold text-body-semibold text-on-surface font-mono">PKR 97,500</span>
+<span class="block text-[11px] text-outline">1.50× Base</span>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col text-[12px]">
+<span class="text-error font-body-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event_busy</span>
+                    21 d (1 LWP Day)
+                  </span>
+<span class="text-outline text-[11px]">Unpaid Leave (Policy D-3)</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col font-mono text-[12px] leading-relaxed">
+<div class="flex justify-between text-error font-medium">
+<span>LWP (1d):</span>
+<span>-PKR 4,432</span>
+</div>
+<div class="flex justify-between text-error font-medium">
+<span>FBR Tax:</span>
+<span>-PKR 5,100</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<span class="font-headline-md text-headline-md font-bold text-primary block">PKR 87,968</span>
+<span class="text-[11px] text-outline">HBL Direct #••3301</span>
+</td>
+<td class="px-space-md py-space-md text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="px-space-xs py-0.5 rounded-full font-label-sm text-label-sm bg-primary-container/20 text-primary font-semibold">
+                    Paid
+                  </span>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-0.5" href="#view-payslip">
+                    View Payslip
+                    <span class="material-symbols-outlined text-[12px]">arrow_forward</span>
+</a>
+</div>
+</td>
+</tr>
+<!-- ROW 5: Ayesha Malik (EMP-004) - Clean Finance -->
+<tr class="hover:bg-surface-container-low transition-colors" data-dept="Finance &amp; Tax" data-status-type="clean">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant font-body-semibold flex items-center justify-center shrink-0">
+                    AM
+                  </div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Ayesha Malik</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">EMP-004</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Tax Compliance Lead</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Finance &amp; Tax</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col font-mono text-[12px] leading-relaxed text-on-surface-variant">
+<div class="flex justify-between"><span>Base:</span> <span class="text-on-surface font-semibold">110,000</span></div>
+<div class="flex justify-between"><span>HRA (40%):</span> <span>44,000</span></div>
+<div class="flex justify-between"><span>Med (10%):</span> <span>11,000</span></div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<span class="font-body-semibold text-body-semibold text-on-surface font-mono">PKR 165,000</span>
+<span class="block text-[11px] text-outline">1.50× Base</span>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col text-[12px]">
+<span class="text-primary font-body-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    22 / 22 Working Days
+                  </span>
+<span class="text-outline text-[11px]">Approved Status</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col font-mono text-[12px] leading-relaxed">
+<div class="flex justify-between text-outline">
+<span>Att. Pen:</span>
+<span>PKR 0</span>
+</div>
+<div class="flex justify-between text-error font-medium">
+<span>FBR Tax:</span>
+<span>-PKR 18,900</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<span class="font-headline-md text-headline-md font-bold text-primary block">PKR 146,100</span>
+<span class="text-[11px] text-outline">HBL Direct #••5519</span>
+</td>
+<td class="px-space-md py-space-md text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="px-space-xs py-0.5 rounded-full font-label-sm text-label-sm bg-primary-container/20 text-primary font-semibold">
+                    Paid
+                  </span>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-0.5" href="#view-payslip">
+                    View Payslip
+                    <span class="material-symbols-outlined text-[12px]">arrow_forward</span>
+</a>
+</div>
+</td>
+</tr>
+<!-- ROW 6: Zoya Khan (EMP-006) - Clean Product -->
+<tr class="hover:bg-surface-container-low transition-colors" data-dept="Product &amp; Design" data-status-type="clean">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant font-body-semibold flex items-center justify-center shrink-0">
+                    ZK
+                  </div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Zoya Khan</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">EMP-006</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Product Manager</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Product &amp; Design</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col font-mono text-[12px] leading-relaxed text-on-surface-variant">
+<div class="flex justify-between"><span>Base:</span> <span class="text-on-surface font-semibold">125,000</span></div>
+<div class="flex justify-between"><span>HRA (40%):</span> <span>50,000</span></div>
+<div class="flex justify-between"><span>Med (10%):</span> <span>12,500</span></div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<span class="font-body-semibold text-body-semibold text-on-surface font-mono">PKR 187,500</span>
+<span class="block text-[11px] text-outline">1.50× Base</span>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col text-[12px]">
+<span class="text-primary font-body-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    22 / 22 Working Days
+                  </span>
+<span class="text-outline text-[11px]">Approved Status</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col font-mono text-[12px] leading-relaxed">
+<div class="flex justify-between text-outline">
+<span>Att. Pen:</span>
+<span>PKR 0</span>
+</div>
+<div class="flex justify-between text-error font-medium">
+<span>FBR Tax:</span>
+<span>-PKR 22,750</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<span class="font-headline-md text-headline-md font-bold text-primary block">PKR 164,750</span>
+<span class="text-[11px] text-outline">HBL Direct #••9932</span>
+</td>
+<td class="px-space-md py-space-md text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="px-space-xs py-0.5 rounded-full font-label-sm text-label-sm bg-primary-container/20 text-primary font-semibold">
+                    Paid
+                  </span>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-0.5" href="#view-payslip">
+                    View Payslip
+                    <span class="material-symbols-outlined text-[12px]">arrow_forward</span>
+</a>
+</div>
+</td>
+</tr>
+<!-- ROW 7: Daniyal Sheikh (EMP-007) - Attendance Deduction -->
+<tr class="hover:bg-surface-container-low transition-colors bg-error-container/5" data-dept="Engineering" data-status-type="attendance-deduction">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant font-body-semibold flex items-center justify-center shrink-0">
+                    DS
+                  </div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Daniyal Sheikh</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">EMP-007</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Backend Engineer II</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Engineering</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col font-mono text-[12px] leading-relaxed text-on-surface-variant">
+<div class="flex justify-between"><span>Base:</span> <span class="text-on-surface font-semibold">88,000</span></div>
+<div class="flex justify-between"><span>HRA (40%):</span> <span>35,200</span></div>
+<div class="flex justify-between"><span>Med (10%):</span> <span>8,800</span></div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<span class="font-body-semibold text-body-semibold text-on-surface font-mono">PKR 132,000</span>
+<span class="block text-[11px] text-outline">1.50× Base</span>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col text-[12px]">
+<span class="text-error font-body-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                    21.0 d (1 Absent)
+                  </span>
+<span class="text-outline text-[11px]">Unnotified Bio Absence</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col font-mono text-[12px] leading-relaxed">
+<div class="flex justify-between text-error font-medium">
+<span>Absent Pen:</span>
+<span>-PKR 6,000</span>
+</div>
+<div class="flex justify-between text-error font-medium">
+<span>FBR Tax:</span>
+<span>-PKR 12,600</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<span class="font-headline-md text-headline-md font-bold text-primary block">PKR 113,400</span>
+<span class="text-[11px] text-outline">HBL Direct #••7742</span>
+</td>
+<td class="px-space-md py-space-md text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="px-space-xs py-0.5 rounded-full font-label-sm text-label-sm bg-primary-container/20 text-primary font-semibold">
+                    Paid
+                  </span>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-0.5" href="#view-payslip">
+                    View Payslip
+                    <span class="material-symbols-outlined text-[12px]">arrow_forward</span>
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="px-space-lg py-space-md bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+          Showing <span class="font-body-semibold text-on-surface">1 - 7</span> of <span class="font-body-semibold text-on-surface">48</span> finalized employee payroll profiles
+        </span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface text-label-sm font-label-sm shadow-sm opacity-50 cursor-not-allowed">
+            Previous
+          </button>
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary text-label-sm font-label-sm shadow-sm">
+            1
+          </button>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface text-label-sm font-label-sm shadow-sm">
+            2
+          </button>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface text-label-sm font-label-sm shadow-sm">
+            3
+          </button>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface text-label-sm font-label-sm shadow-sm">
+            Next
+          </button>
+</div>
+</div>
+</div>
+<!-- 6. Audit & Disbursal Trail Panel at Bottom -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg" id="audit-trail">
+<!-- Left 2 Cols: Timeline -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">verified</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">
+              Execution Lifecycle &amp; Disbursal Audit Trail
+            </h2>
+</div>
+<span class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-primary-container/20 text-primary font-body-semibold">
+            Status: Immutable Lock
+          </span>
+</div>
+<!-- Vertical Timeline Steps -->
+<div class="relative pl-6 space-y-6 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-highest">
+<!-- Item 1 -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-primary flex items-center justify-center ring-4 ring-background">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-body-semibold text-body-semibold text-on-surface">Biometric IoT Sync &amp; Attendance Reconciliation</span>
+<span class="font-label-sm text-label-sm text-outline">22 Oct 2026, 11:59 PM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+                Edge terminal records pulled across 3 site offices. 21.5 penalty days computed automatically based on biometric logs.
+              </p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-primary flex items-center justify-center ring-4 ring-background">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-body-semibold text-body-semibold text-on-surface">HR Draft Generation &amp; Exception Review</span>
+<span class="font-label-sm text-label-sm text-outline">23 Oct 2026, 02:15 PM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+                Draft initiated by <span class="font-body-semibold text-on-surface">Morgan Vance (HR Manager)</span> via <code class="font-mono text-[12px]">POST /api/payroll/runs</code>. 7 anomaly adjustments reviewed and signed off.
+              </p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-primary flex items-center justify-center ring-4 ring-background">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-body-semibold text-body-semibold text-on-surface">Tax Slab Verification (2026 FBR Schedule)</span>
+<span class="font-label-sm text-label-sm text-outline">24 Oct 2026, 09:30 AM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+                Statutory progressive income tier formulas verified by Finance &amp; Tax Lead. Total withholding approved at PKR 284,000.
+              </p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-primary-container flex items-center justify-center ring-4 ring-background">
+<span class="material-symbols-outlined text-on-primary text-[10px]">lock</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-body-semibold text-body-semibold text-primary font-bold">Finalized &amp; Cryptographically Locked by System Admin</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">24 Oct 2026, 04:30 PM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+                Executed final payroll lock. ACH direct deposit file dispatched to Habib Bank (HBL) API Gateway. Records marked read-only.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right 1 Col: Security Stamp & SHA-256 Hash Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm text-secondary">
+<span class="material-symbols-outlined text-[24px]">fingerprint</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">Security Seal &amp; Integrity</span>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs font-mono text-[11px] text-on-surface-variant break-all">
+<span class="text-outline uppercase text-[10px] tracking-wider">SHA-256 Ledger Hash</span>
+<span class="text-on-surface font-semibold">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+</div>
+<div class="flex flex-col gap-space-xs text-body-md font-body-md text-on-surface-variant">
+<div class="flex justify-between py-1">
+<span class="text-outline">Algorithm:</span>
+<span class="font-body-semibold text-on-surface">ECDSA P-256 / SHA256</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-outline">Key Authority:</span>
+<span class="font-body-semibold text-on-surface">HCM-US-EAST-KMS</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-outline">HBL Batch Clearance:</span>
+<span class="font-body-semibold text-primary">ACK-99201928-OK</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-outline">Employee Access:</span>
+<span class="font-body-semibold text-on-surface">Enabled (ESS)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-md bg-surface-container-low p-space-md rounded-lg flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[28px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface">Immutable Ledger State</span>
+<span class="font-label-sm text-label-sm text-outline">Signed on Oct 24, 2026 by Root Admin</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Draft Generation Interactive Confirmation Modal -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-space-lg" id="draft-modal">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl shadow-2xl p-space-xl flex flex-col gap-space-lg">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">sync</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Generate Payroll Draft</h3>
+<p class="font-label-sm text-label-sm text-outline">Target Cycle: October 2026</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container flex items-center justify-center" onclick="closeDraftModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs text-body-md font-body-md text-on-surface-variant">
+<p>This automated action will trigger <code class="font-mono text-primary font-semibold">POST /api/payroll/runs</code> to:</p>
+<ul class="list-disc list-inside space-y-1 text-[13px] mt-1">
+<li>Pull IoT Biometric logs up to 24 Oct 2026</li>
+<li>Recalculate half-day &amp; unpaid penalty deductions</li>
+<li>Apply statutory 2026 progressive FBR tax formulas</li>
+<li>Create review batch draft for HR &amp; Administrator sign-off</li>
+</ul>
+</div>
+<div class="flex items-center justify-end gap-space-md">
+<button class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container font-body-semibold text-body-semibold transition-colors" onclick="closeDraftModal()">
+          Cancel
+        </button>
+<button class="px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary font-body-semibold text-body-semibold shadow hover:bg-primary transition-colors flex items-center gap-1" onclick="closeDraftModal()">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+          Execute Draft Run
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

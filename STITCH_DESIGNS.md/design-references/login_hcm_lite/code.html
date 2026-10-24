@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary-fixed-dim":"#7bd8b1","secondary-container":"#6df5e1","background":"#faf8ff","primary-fixed":"#97f5cc","on-primary-container":"#9ffdd3","on-tertiary-fixed-variant":"#005137","on-tertiary-container":"#8fffcb","tertiary-fixed":"#85f8c4","surface-container-high":"#e2e7ff","on-secondary-fixed-variant":"#005048","primary-container":"#047857","tertiary":"#005d3f","on-background":"#131b2e","surface-container-highest":"#dae2fd","surface-variant":"#dae2fd","surface-dim":"#d2d9f4","outline-variant":"#bdc9c1","on-error-container":"#93000a","primary":"#005d42","error-container":"#ffdad6","on-surface":"#131b2e","secondary-fixed":"#71f8e4","on-secondary-container":"#006f64","on-tertiary-fixed":"#002114","error":"#ba1a1a","surface-bright":"#faf8ff","tertiary-container":"#007853","secondary-fixed-dim":"#4fdbc8","surface-tint":"#006c4e","on-primary-fixed":"#002115","on-secondary":"#ffffff","secondary":"#006b5f","on-primary":"#ffffff","inverse-primary":"#7bd8b1","inverse-on-surface":"#eef0ff","on-error":"#ffffff","on-secondary-fixed":"#00201c","inverse-surface":"#283044","tertiary-fixed-dim":"#68dba9","outline":"#6e7a73","surface-container-lowest":"#ffffff","surface":"#faf8ff","surface-container":"#eaedff","on-primary-fixed-variant":"#00513a","on-surface-variant":"#3e4943","on-tertiary":"#ffffff","surface-container-low":"#f2f3ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"0.75rem","space-xs":"0.25rem","space-2xl":"2rem","space-lg":"1rem","gutter":"1rem","space-md":"0.75rem","space-xl":"1.5rem","margin-mobile":"1rem","space-sm":"0.5rem","margin":"1.5rem"},"fontFamily":{"body-md":["Hanken Grotesk"],"metric-stat":["Outfit"],"headline-lg":["Outfit"],"headline-md":["Outfit"],"label-sm":["Hanken Grotesk"],"display-lg":["Outfit"],"body-semibold":["Hanken Grotesk"],"label-md":["Hanken Grotesk"],"display-md":["Outfit"],"body-lg":["Hanken Grotesk"]},"fontSize":{"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"metric-stat":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"display-lg":["30px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-semibold":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"display-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><main class="w-full min-h-screen bg-surface"><div class="flex flex-col w-full">
+<div class="w-full min-h-screen flex flex-col lg:flex-row bg-surface">
+<!-- Left Showcase Panel (55% on desktop) -->
+<section class="relative w-full lg:w-[55%] bg-gradient-to-br from-[#064e3b] via-[#033b2c] to-[#011f18] text-white p-8 lg:p-14 flex flex-col justify-between overflow-hidden">
+<!-- Decorative Backdrop Geometry -->
+<div class="absolute inset-0 pointer-events-none opacity-20">
+<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="hcm-grid" patternunits="userSpaceOnUse" width="40">
+<circle cx="2" cy="2" fill="#34d399" opacity="0.6" r="1.5"></circle>
+<path d="M 40 0 L 0 0 0 40" fill="none" opacity="0.4" stroke="#059669" stroke-dasharray="2 6" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#hcm-grid)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<!-- Ambient Glow Orbs -->
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary-fixed-dim/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-10 right-0 w-80 h-80 bg-secondary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Top Header & Brand -->
+<header class="relative z-10 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-primary-fixed-dim via-primary to-primary-container flex items-center justify-center shadow-lg shadow-black/20 text-on-primary">
+<span class="material-symbols-outlined text-[26px]">hub</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-display-md text-headline-lg font-bold tracking-tight text-white">HCM Lite</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed/20 text-primary-fixed font-label-sm text-[10px] tracking-wider uppercase border border-primary-fixed/30 font-semibold">v2.4 Enterprise</span>
+</div>
+<p class="font-label-sm text-surface-container-high/70 text-[11px] tracking-wide">AI-ASSISTED WORKFORCE ORCHESTRATION</p>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-[12px] font-label-md text-surface-container-low/90">
+<span class="w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></span>
+<span>FBR Tax Rules Synced</span>
+</div>
+</header>
+<!-- Main Showcase Storyline -->
+<div class="relative z-10 my-10 lg:my-auto max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-primary-fixed text-label-md mb-6 border border-white/15">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Unified Enterprise People Operations</span>
+</div>
+<h1 class="font-display-lg text-white font-bold leading-tight mb-4 tracking-tight">
+          Intelligent Human Capital Management for Modern Workforces
+        </h1>
+<p class="font-body-lg text-surface-container-high/85 text-[15px] leading-relaxed mb-8 max-w-xl">
+          Streamline multi-branch attendance, hardware biometric sync, automated payroll taxation compliance, and role-governed AI operations in one audited workspace.
+        </p>
+<!-- Feature Cards (Glassmorphism Bento stack) -->
+<div class="space-y-3.5">
+<!-- Card 1 -->
+<div class="group relative rounded-xl p-4 bg-white/[0.07] backdrop-blur-md border border-white/15 transition-all duration-300 hover:bg-white/[0.12] hover:border-primary-fixed/40">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-emerald-400/20 text-primary-fixed flex items-center justify-center shrink-0 border border-primary-fixed/30 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">pin_drop</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<h3 class="font-headline-md text-[15px] text-white font-semibold">Automated Punctuality &amp; Geofenced Attendance</h3>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-label-sm bg-primary-fixed/20 text-primary-fixed">GPS &amp; BioSync</span>
+</div>
+<p class="font-body-md text-surface-container-high/70 text-[13px] leading-snug">
+                  Sub-meter GPS geofencing with real-time biometric hardware terminal integration and configurable policy grace periods.
+                </p>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative rounded-xl p-4 bg-white/[0.07] backdrop-blur-md border border-white/15 transition-all duration-300 hover:bg-white/[0.12] hover:border-primary-fixed/40">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/20 text-secondary-fixed flex items-center justify-center shrink-0 border border-secondary-fixed/30 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<h3 class="font-headline-md text-[15px] text-white font-semibold">Progressive Tax &amp; Transparent Monthly Payroll</h3>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-label-sm bg-secondary-fixed/20 text-secondary-fixed">Statutory Compliant</span>
+</div>
+<p class="font-body-md text-surface-container-high/70 text-[13px] leading-snug">
+                  Dynamic slab computation based on real attendance records, statutory provident deductions, and batch PDF payslips.
+                </p>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative rounded-xl p-4 bg-white/[0.07] backdrop-blur-md border border-white/15 transition-all duration-300 hover:bg-white/[0.12] hover:border-primary-fixed/40">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-teal-400/20 text-primary-fixed-dim flex items-center justify-center shrink-0 border border-teal-300/30 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">auto_awesome</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<h3 class="font-headline-md text-[15px] text-white font-semibold">Server-Governed AI Copilot &amp; Policy Queries</h3>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-label-sm bg-primary-fixed-dim/20 text-primary-fixed-dim">Strict Context</span>
+</div>
+<p class="font-body-md text-surface-container-high/70 text-[13px] leading-snug">
+                  Predictive leave approval scoring, shift anomaly detection, and natural language HR queries governed by zero-leakage role ACLs.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Hackathon Badge -->
+<footer class="relative z-10 pt-4 flex flex-wrap items-center justify-between gap-3 text-[12px] font-label-md text-surface-container-high/75 border-t border-white/10">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/15">
+<span class="text-base">🏆</span>
+<span class="text-white font-medium">Saylani Hackathon 2026 Official Build</span>
+<span class="text-primary-fixed font-semibold tracking-wider text-[11px]">• v2.4.0-stable</span>
+</div>
+<div class="flex items-center gap-4 text-surface-container-high/60">
+<span>Enterprise Multi-Tenant</span>
+<span>•</span>
+<span>Zero Knowledge Auth</span>
+</div>
+</footer>
+</section>
+<!-- Right Authentication Panel (45% on desktop) -->
+<section class="w-full lg:w-[45%] bg-surface-container-lowest p-6 sm:p-10 lg:p-14 flex flex-col justify-between overflow-y-auto">
+<!-- Top Utility / Language & Status Indicator -->
+<div class="flex items-center justify-between pb-4">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface-variant text-[11px] font-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>SYSTEM READY</span>
+</div>
+<div class="text-[12px] font-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">encrypted</span>
+<span>TLS 1.3 256-Bit SSL</span>
+</div>
+</div>
+<!-- Centered Login Box Content -->
+<div class="max-w-md w-full mx-auto my-auto py-4">
+<!-- Header -->
+<div class="mb-6">
+<span class="inline-block px-2.5 py-1 rounded-md bg-emerald-50 text-primary font-label-sm uppercase font-bold text-[11px] tracking-wide mb-2">
+            Secure SSO &amp; Direct Access
+          </span>
+<h2 class="font-headline-lg text-display-md text-on-surface font-bold tracking-tight">Sign In to Your Workspace</h2>
+<p class="font-body-md text-on-surface-variant text-[14px] mt-1">Enter your organization credentials to securely access your portal.</p>
+</div>
+<!-- Deactivated / Onboarding Context Info Banner -->
+<div class="mb-5 p-3 rounded-lg bg-surface-container-low border border-outline-variant/30 text-on-surface text-[12px] font-body-md flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">info</span>
+<div class="leading-snug">
+<span class="font-semibold text-on-surface">First time logging in?</span>
+            Temporary credentials issued by HR require a mandatory password update upon initial session handshake.
+          </div>
+</div>
+<!-- Form -->
+<form class="space-y-4" id="authForm" onsubmit="event.preventDefault(); handleLoginSubmit();">
+<!-- Email Input -->
+<div>
+<div class="flex justify-between items-center mb-1.5">
+<label class="font-label-md text-on-surface text-[13px] font-semibold" for="companyEmail">Company Email Address</label>
+<span class="text-[11px] font-label-sm text-primary uppercase font-bold tracking-wider" id="resolvedRoleBadge">Employee Account</span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-[18px] text-outline pointer-events-none">mail</span>
+<input class="w-full h-11 pl-10 pr-4 rounded-lg bg-surface-container-lowest text-on-surface text-body-md border border-outline-variant focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline/70" id="companyEmail" placeholder="name@company.com" required="" type="email" value="sara.ahmed@hcmlite.com"/>
+</div>
+</div>
+<!-- Password Input -->
+<div>
+<div class="flex justify-between items-center mb-1.5">
+<label class="font-label-md text-on-surface text-[13px] font-semibold" for="userPassword">Password</label>
+<a class="text-primary hover:text-primary-container font-label-md text-[12px] font-medium transition-colors" href="#reset" onclick="alert('Password reset link dispatched to authorized corporate recovery channel.'); return false;">
+                Forgot Password?
+              </a>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-[18px] text-outline pointer-events-none">lock</span>
+<input class="w-full h-11 pl-10 pr-10 rounded-lg bg-surface-container-lowest text-on-surface text-body-md border border-outline-variant focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline/70" id="userPassword" placeholder="••••••••••••" required="" type="password" value="SecureEnterprise2026!"/>
+<button aria-label="Toggle password visibility" class="absolute right-3 text-outline hover:text-on-surface transition-colors focus:outline-none" id="togglePasswordBtn" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-[18px]" id="passwordEyeIcon">visibility_off</span>
+</button>
+</div>
+</div>
+<!-- Remember & Need Help -->
+<div class="flex items-center justify-between pt-1 pb-1">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary/30 border-outline-variant accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-on-surface text-[13px]">Remember this device for 30 days</span>
+</label>
+<a class="font-label-md text-on-surface-variant hover:text-on-surface text-[12px]" href="#help" onclick="alert('Contacting internal IT Desk support: it-helpdesk@hcmlite.internal'); return false;">
+              Need Help?
+            </a>
+</div>
+<!-- Primary Sign In Button -->
+<button class="w-full h-11 rounded-lg bg-primary hover:bg-primary-container active:scale-[0.99] text-on-primary font-body-semibold text-[15px] flex items-center justify-center gap-2 shadow-md hover:shadow-lg shadow-primary/20 transition-all duration-200" id="signInBtn" type="submit">
+<span id="btnText">Sign In to Workspace</span>
+<span class="material-symbols-outlined text-[18px]" id="btnIcon">arrow_forward</span>
+</button>
+</form>
+<!-- Hackathon Evaluator Quick Switcher Card -->
+<div class="mt-6 p-4 rounded-xl bg-surface-container-low border border-primary/20 border-dashed relative">
+<div class="flex items-center justify-between mb-2.5">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-primary text-on-primary tracking-wider">
+                ⚡ HACKATHON EVALUATION MODE
+              </span>
+</div>
+<span class="text-[11px] font-label-sm text-on-surface-variant">Click role to auto-populate</span>
+</div>
+<p class="font-label-md text-on-surface text-[12px] font-semibold mb-2.5">Quick Demo Logins for Judges &amp; Reviewers:</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+<!-- Role 1: Admin -->
+<button class="group text-left p-2.5 rounded-lg bg-surface-container-lowest hover:bg-primary/5 border border-outline-variant hover:border-primary/50 transition-all flex flex-col justify-between" onclick="autofillDemo('admin@hcmlite.com', 'AdminPass2026#', 'System Superadmin', '👑 Superadmin')" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-label-sm font-bold text-purple-700 text-[11px] flex items-center gap-1">
+<span>👑</span> Superadmin
+                </span>
+<span class="material-symbols-outlined text-[14px] text-outline group-hover:text-primary">arrow_circle_right</span>
+</div>
+<span class="text-[11px] font-mono text-on-surface font-semibold truncate">admin@hcmlite.com</span>
+<span class="text-[10px] text-on-surface-variant">Full HR &amp; Config ACL</span>
+</button>
+<!-- Role 2: HR Manager -->
+<button class="group text-left p-2.5 rounded-lg bg-surface-container-lowest hover:bg-primary/5 border border-outline-variant hover:border-primary/50 transition-all flex flex-col justify-between" onclick="autofillDemo('hr@hcmlite.com', 'HRDirector2026#', 'HR Operations Lead', '💼 HR Manager')" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-label-sm font-bold text-blue-700 text-[11px] flex items-center gap-1">
+<span>💼</span> HR Manager
+                </span>
+<span class="material-symbols-outlined text-[14px] text-outline group-hover:text-primary">arrow_circle_right</span>
+</div>
+<span class="text-[11px] font-mono text-on-surface font-semibold truncate">hr@hcmlite.com</span>
+<span class="text-[10px] text-on-surface-variant">Payroll &amp; Leaves Apprv.</span>
+</button>
+<!-- Role 3: Employee -->
+<button class="group text-left p-2.5 rounded-lg bg-surface-container-lowest hover:bg-primary/5 border border-outline-variant hover:border-primary/50 transition-all flex flex-col justify-between" onclick="autofillDemo('emp@hcmlite.com', 'EmployeePass2026#', 'Staff Member', '👤 Employee')" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-label-sm font-bold text-emerald-700 text-[11px] flex items-center gap-1">
+<span>👤</span> Employee
+                </span>
+<span class="material-symbols-outlined text-[14px] text-outline group-hover:text-primary">arrow_circle_right</span>
+</div>
+<span class="text-[11px] font-mono text-on-surface font-semibold truncate">emp@hcmlite.com</span>
+<span class="text-[10px] text-on-surface-variant">Clock-In &amp; Payslips</span>
+</button>
+</div>
+<div class="hidden mt-2 text-[11px] font-label-sm text-primary font-medium flex items-center gap-1" id="selectionFeedback">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span id="feedbackMessage">Autofilled Admin credentials successfully.</span>
+</div>
+</div>
+</div>
+<!-- Footer Info -->
+<footer class="pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-3 text-[12px] font-body-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">security</span>
+<span>HTTP-only JWT sessions &amp; bcrypt salted encryption</span>
+</div>
+<div class="flex items-center gap-3">
+<a class="text-primary hover:underline font-label-md" href="#setup" onclick="alert('Navigating to Tenant Setup Wizard (Superadmin onboarding).'); return false;">
+            Initial Tenant Setup →
+          </a>
+<span class="text-outline">•</span>
+<span class="font-mono text-[11px] text-on-surface-variant">Latency: 24ms</span>
+</div>
+</footer>
+</section>
+</div>
+</div>
+<script>
+  function togglePasswordVisibility() {
+    const input = document.getElementById('userPassword');
+    const icon = document.getElementById('passwordEyeIcon');
+    if (input.type === 'password') {
+      input.type = 'text';
+      icon.textContent = 'visibility';
+    } else {
+      input.type = 'password';
+      icon.textContent = 'visibility_off';
+    }
+  }
+
+  function autofillDemo(email, pass, roleLabel, badgeText) {
+    const emailInput = document.getElementById('companyEmail');
+    const passInput = document.getElementById('userPassword');
+    const roleBadge = document.getElementById('resolvedRoleBadge');
+    const feedbackBox = document.getElementById('selectionFeedback');
+    const feedbackMsg = document.getElementById('feedbackMessage');
+
+    emailInput.value = email;
+    passInput.value = pass;
+    roleBadge.textContent = badgeText;
+
+    feedbackMsg.textContent = `Applied demo profile: ${email} (${roleLabel})`;
+    feedbackBox.classList.remove('hidden');
+
+    emailInput.classList.add('ring-2', 'ring-primary');
+    passInput.classList.add('ring-2', 'ring-primary');
+
+    setTimeout(() => {
+      emailInput.classList.remove('ring-2', 'ring-primary');
+      passInput.classList.remove('ring-2', 'ring-primary');
+    }, 800);
+  }
+
+  function handleLoginSubmit() {
+    const btn = document.getElementById('signInBtn');
+    const btnText = document.getElementById('btnText');
+    const btnIcon = document.getElementById('btnIcon');
+    const email = document.getElementById('companyEmail').value;
+
+    btn.disabled = true;
+    btnText.textContent = 'Authenticating Secure Session...';
+    btnIcon.textContent = 'sync';
+    btnIcon.classList.add('animate-spin');
+
+    setTimeout(() => {
+      btn.disabled = false;
+      btnText.textContent = 'Sign In to Workspace';
+      btnIcon.textContent = 'arrow_forward';
+      btnIcon.classList.remove('animate-spin');
+      alert(`Authenticated successfully as: ${email}\nRedirecting to HCM Lite Workspace Dashboard...`);
+    }, 900);
+  }
+</script></main></body></html>
